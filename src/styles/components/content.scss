@@ -21,11 +21,10 @@ hr {
 
 .text-regular {
   font-size: $font-size-base;
-  line-height: 1.5em;
 }
 
 a {
-  @extend .text-regular;
+  line-height: 1.5em;
   font-weight: bold;
   text-decoration: underline;
   color: #3d3d35;

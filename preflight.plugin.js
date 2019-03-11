@@ -1,4 +1,5 @@
 const fs = require('fs');
+const ejs = require('ejs');
 const juice = require('juice');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -24,14 +25,17 @@ class PreflightPlugin {
   apply(compiler) {
     new HtmlWebpackInlineSourcePlugin().apply(compiler);
 
-    Object.entries(this.templates).forEach(([filename, path]) => new HtmlWebpackPlugin({
+    Object.entries(this.templates).forEach(([filename, path]) => {
+      const fileContent = fs.readFileSync(path, {encoding: 'utf-8'});
+
+      return new HtmlWebpackPlugin({
         template: this.options.template,
-        filename,
-        body: fs.readFileSync(path),
+        filename: filename.replace('ejs', 'html'),
+        body: ejs.render(fileContent, {filename}),
         inlineSource: '.css$',
         minify: true,
-      }).apply(compiler)
-    );
+      }).apply(compiler);
+    });
 
     compiler.plugin('emit', (compilation, done) => {
       Object.entries(compilation.assets).forEach(([filename, asset]) => {
@@ -41,7 +45,7 @@ class PreflightPlugin {
             inlinePseudoElements: this.options.inlinePseudoElements,
           });
 
-          compilation.assets[compiled] = {
+          compilation.assets[filename] = {
             source: () => source,
             size: () => Buffer.byteLength(source, 'utf8')
           };
