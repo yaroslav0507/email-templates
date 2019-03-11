@@ -1,5 +1,4 @@
 div {
-  line-height: 100%;
   mso-line-height-rule: exactly;
 }
 
@@ -9,6 +8,10 @@ a {
   * {
     border: 0;
   }
+}
+
+td {
+  padding: 0;
 }
 
 /**

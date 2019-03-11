@@ -1,10 +1,16 @@
 .body {
   background-color: $body-bg;
+  margin: 0;
+  padding: 0; /*@editable*/
+  overflow-wrap: break-word;
+  color: #1C1C1C;
+  line-height: 14px;
+  font-size: 11px;
+  font-family: Roboto, Arial, serif;
 }
 
 .wrapper {
   width: 100%;
-
 }
 
 .container {
