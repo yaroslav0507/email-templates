@@ -136,8 +136,12 @@ p {
     padding: 0 15px 0 30px;
 
     &__bordered {
-      border-left: 1px solid #000000;
-      border-right: 1px solid #000000;
+      border-left: 1px solid #585858;
+      border-right: 1px solid #585858;
+    }
+
+    .text-regular {
+      line-height: 1.7em;
     }
   }
 }
@@ -153,6 +157,6 @@ p {
   }
 }
 
-.phone-link {
+.link-default {
   text-decoration: none;
 }
