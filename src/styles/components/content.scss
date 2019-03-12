@@ -14,6 +14,13 @@
   @include font(11px);
 }
 
+img {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
 hr {
   border: 0;
   border-bottom: 3px solid #d9d49f;
@@ -21,11 +28,13 @@ hr {
 
 .text-regular {
   font-size: $font-size-base;
+  letter-spacing: -.3px;
 }
 
 a {
   line-height: 1.5em;
-  font-weight: bold;
+  font-size: $font-size-base;
+  letter-spacing: -.3px;
   text-decoration: underline;
   color: #3d3d35;
 }
@@ -81,7 +90,6 @@ h1, h2, h3 {
   display: block;
   font-family: Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
   line-height: 100%;
   letter-spacing: normal;
   margin: 0 0 5px;
@@ -90,14 +98,27 @@ h1, h2, h3 {
 
 h1 {
   font-size: 16px;
+  letter-spacing: .2px;
+  font-weight: normal;
+  * {
+    font-size: 16px;
+  }
 }
 
 h2 {
   font-size: 14px;
+  font-weight: bold;
+  * {
+    font-size: 14px;
+  }
 }
 
 h3 {
   font-size: 12px;
+  font-weight: bold;
+  * {
+    font-size: 12px;
+  }
 }
 
 p {
