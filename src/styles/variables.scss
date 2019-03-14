@@ -18,7 +18,9 @@ $themes: (
 
 $font-family: "Proximo Nova", Helvetica Neue, Helvetica, Arial, sans-serif;
 
-$font-size-base: 11px;
+$font-size-small: 11px;
+$font-size-base: 12px;
+$letter-spacing-base: 0;
 $font-weight-base: normal;
 $font-family-base: $font-family;
 $line-height-base: 120%;
