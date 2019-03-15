@@ -1,0 +1,60 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Batch/ShopperName"/>,
+				<br/><br/>
+				Thank you for consigning wine to K&amp;L Wine Auctions. We have received and inspected your bottles and are ready to proceed with listing your lots online at KLWines.com.<br/><br/>
+				Within this email are the final terms for your auction lot(s). Please review this information and contact the Auction Director at auctions@klwines.com or call 650-556-2701 if you need to request any changes.<br/><br/>
+				If you agree to these terms as indicated below, please reply to this email stating your consent to proceed with the auction. Your reply also indicates you've read and consent to the <a href="{$BaseLinkUrlKey}/Auction/Information/AuctionInfo.aspx?section=TermsAndConditions#TermsAndConditions">K&amp;L Wine Auctions Terms and Conditions of Auction Sale</a>. **IMPORTANT: We will not list your lots online without receiving your written approval.<br/><br/><br/>
+
+				<xsl:for-each select = "Batch">
+					<xsl:variable name = "LotID" select = "LotID"/>
+					
+					Lot Name: <xsl:value-of select="LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="LotName"/><br/>
+					<xsl:if test="string-length(MinimumBidPrice) &gt; 0">
+						Starting Bid Price:
+						<xsl:value-of select="format-number(MinimumBidPrice, '$#,##0.00')"/><br/>
+					</xsl:if>
+					<xsl:if test="ReservePrice &gt; 0">
+						Lot Reserve Price:
+						<xsl:value-of select="format-number(ReservePrice, '$#,##0.00')"/><br/><br/>
+					</xsl:if>
+					<xsl:if test="NumberOfBottles &gt; 0">
+						Number Of Bottles:
+						<xsl:value-of select="NumberOfBottles"/><br/><br/>
+					</xsl:if>
+
+					<table border="1" cellpadding="5">
+						<th>Item Name</th>
+
+						<xsl:for-each select="../LotItem[LotID=$LotID]" >
+
+							<tr>
+								<td>
+									<xsl:if test="Vintage &gt; 0">
+										<xsl:value-of select="Vintage"/>&#160;
+									</xsl:if>
+									<xsl:value-of select="ItemName"/>
+								</td>
+							</tr>
+
+						</xsl:for-each>
+
+					</table>
+					<br/>
+
+				</xsl:for-each>
+
+				Thank you for working with K&amp;L Wine Merchants!
+
+				<br/><br/>-------------------------------------------------------------------------------<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+
+				<br/>-------------------------------------------------------------------------------<br/><br/>
+			</body>
+		</html>

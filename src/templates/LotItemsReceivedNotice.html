@@ -1,0 +1,71 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Lot/ShopperName"/>,
+				<br/><br/>
+
+				This is a confirmation that we have received the items for the lot listed below. 
+				We will be inspecting the items to ensure that the quality and description match our 
+				initial auction agreement.
+
+				<br/><br/>
+				An auction director will be in touch with you shortly to discuss the date your lot 
+				will go live to bidders and confirm the terms of your auction agreement.
+				<br/><br/>
+				If you need to get in touch with us about your lot, send an e-mail message to
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+				or call 650-591-1705.
+
+				<br/><br/>
+
+				You can always view your lot status by going to the My Account section of our website, and selecting "Auctions - Selling":<br/>
+				<a href="http://www.klwines.com/account.asp">http://www.klwines.com/account.asp</a>
+				<br/><br/>
+
+				Lot Name: <xsl:value-of select="Lot/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Lot/LotName"/><br/>
+				Description: <xsl:value-of select="Lot/LotDescription"/>
+
+				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+
+				<table border="1" cellpadding="5">
+					<th>Item Name</th>
+					<th>Quantity</th>
+					<th>Bottle Size</th>
+					<th>Vintage</th>
+
+					<xsl:for-each select="LotItem">
+
+						<tr>
+							<td>
+								<xsl:value-of select="ItemName"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Quantity"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="BottleSize"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Vintage"/>
+							</td>
+						</tr>
+
+					</xsl:for-each>
+
+				</table>
+
+				<br/><br/>
+
+				Thank you for working with K&amp;L Wine Merchants!
+
+				<br/><br/>-------------------------------------------------------------------------------<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+
+				<br/>-------------------------------------------------------------------------------<br/><br/>
+			</body>
+		</html>

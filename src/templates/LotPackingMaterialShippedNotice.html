@@ -1,0 +1,155 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Lot/ShopperName"/>,
+				<br/><br/>
+
+				This is a confirmation that we have shipped your auction packing supplies to the address below:
+
+				<br/><br/>
+				Lot Items Pick-Up Address:<br/>				
+				<xsl:choose>
+					<xsl:when test="string-length(Lot/PickUpAddressName) &gt; 0">
+							<xsl:value-of select="Lot/PickUpAddressName"/>
+
+							<xsl:if test="string-length(Lot/PickUpCompanyName) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/PickUpCompanyName"/>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PickUpAddress1) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/PickUpAddress1"/>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PickUpAddress2) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/PickUpAddress2"/>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PickUpCity) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/PickUpCity"/>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PickUpStateCD) &gt; 0">
+								<xsl:choose>
+									<xsl:when test="string-length(Lot/PickUpCity) &gt; 0">
+										<xsl:text>, </xsl:text>
+										<xsl:value-of select="Lot/PickUpStateCD"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<br/>
+										<xsl:value-of select="Lot/PickUpStateCD"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PickUpPostalCode) &gt; 0">
+								<xsl:choose>
+									<xsl:when test="string-length(Lot/PickUpCity) &gt; 0 or string-length(Lot/PickUpStateCD) &gt; 0">
+										<xsl:text> </xsl:text>
+										<xsl:value-of select="Lot/PickUpPostalCode"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<br/>
+										<xsl:value-of select="Lot/PickUpPostalCode"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PickUpCountry) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/PickUpCountry"/>
+							</xsl:if>
+						</xsl:when>
+					<xsl:otherwise>
+							<xsl:value-of select="Lot/Name"/>
+							<xsl:if test="string-length(Lot/Address1) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/Address1"/>
+							</xsl:if>
+							
+							<xsl:if test="string-length(Lot/City) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/City"/>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/StateCD) &gt; 0">
+								<xsl:choose>
+									<xsl:when test="string-length(Lot/City) &gt; 0">
+										<xsl:text>, </xsl:text>
+										<xsl:value-of select="Lot/StateCD"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<br/>
+										<xsl:value-of select="Lot/StateCD"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:if>
+							<xsl:if test="string-length(Lot/PostalCode) &gt; 0">								
+										<br/>
+										<xsl:value-of select="Lot/PostalCode"/>									
+							</xsl:if>
+							<xsl:if test="string-length(Lot/Country) &gt; 0">
+								<br/>
+								<xsl:value-of select="Lot/Country"/>
+							</xsl:if>							
+						</xsl:otherwise>
+				</xsl:choose>
+				<br/><br/>
+
+				Please refer to the directions on the shipping materials in order
+				to pack your items securely for safe return to our fulfillment center. 
+				You will receive an email confirmation when we have received your auction items.
+				<br/><br/>
+				If you have any questions regarding the shipment of your items or do not receive
+				your packing materials, please send an e-mail message to 
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a> or call 650-591-1705.
+				<br/><br/>
+
+				You can always view your lot status by going to the My Account section of our website, and selecting "Auctions - Selling":<br/>
+				<a href="http://www.klwines.com/account.asp">http://www.klwines.com/account.asp</a>
+
+				<br/><br/>
+
+				Lot Name: <xsl:value-of select="Lot/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Lot/LotName"/><br/>
+				Description: <xsl:value-of select="Lot/LotDescription"/><br/>			
+
+				<br/>-------------------------------------------------------------------------------<br/><br/>
+
+				<table border="1" cellpadding="5">
+					<th>Item Name</th>
+					<th>Quantity</th>
+					<th>Bottle Size</th>
+					<th>Vintage</th>
+
+					<xsl:for-each select="LotItem">
+
+						<tr>
+							<td>
+								<xsl:value-of select="ItemName"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Quantity"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="BottleSize"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Vintage"/>
+							</td>
+						</tr>
+
+					</xsl:for-each>
+
+				</table>
+
+				<br/><br/>
+
+				Thank you for working with K&amp;L Wine Merchants!<br/><br/>
+
+				-------------------------------------------------------------------------------<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a><br/>
+
+				-------------------------------------------------------------------------------<br/>
+			</body>
+		</html>

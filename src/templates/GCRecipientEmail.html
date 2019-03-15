@@ -1,0 +1,162 @@
+<html>
+				<body style="width:800px">
+					<table style="width:800px;font-size:13px;">
+						<tr>
+							<td  style="width:266px">
+								San Francisco, CA
+							</td>
+							<td  align="center"  style="width:266px">
+								Redwood City, CA
+							</td>
+							<td align="right" style="width:266px">
+								Hollywood, CA
+							</td>
+						</tr>
+						<br/>
+						<br/>
+						<tr>
+							<td style="width:266px"></td>
+							<td align="center"  style="width:266px">								
+								<img src="http://www.klwines.com/images/kl_logo_trans.gif">
+								</img>
+							</td>
+							<td style="width:266px"></td>
+						</tr>
+					</table>
+					<br/>
+					<br/>
+
+					<table  style="font-size:13px;">
+						<tr>
+							<td style="font-size:14px;text-decoration:underline;color:#a52029">
+								<b>
+									Gift Card Details:
+								</b>
+							</td>
+						</tr>
+						<br/>
+
+						<tr>
+							<td align="right">
+								<b>CardNumber:</b>
+							</td>
+							<td align="left">
+								<xsl:value-of select="GCEmail/GiftCardSerialNumber"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<b>PIN:</b>
+							</td>
+							<td align="left">
+								<xsl:value-of select="GCEmail/GiftCardPin"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<b>Amount:</b>
+							</td>
+							<td align="left">
+								<xsl:value-of select="format-number(GCEmail/Amount, '$#,##0.00')"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right" >
+								<b>Purchase Date:</b>
+							</td>
+							<td align="left">
+								<xsl:variable name = "Date" select = "myutils:ConvertDate(GCEmail/LastModifiedDate)"/>
+								<xsl:value-of select="$Date"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<b>Gift To:</b>
+							</td>
+							<td align="left">
+								<xsl:value-of select="GCEmail/GiftTo"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<b>Gift From:</b>
+							</td>
+							<td align="left">
+								<xsl:value-of select="GCEmail/GiftFrom"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<b>	Message:</b>
+							</td>
+							<td align="left">
+								<xsl:value-of select="GCEmail/Message"/>
+							</td>
+						</tr>
+
+					</table>
+					<br/>
+					<br/>
+					<br/>
+					<table style="width:800px; font-size:13px;">
+						<tr>
+							<td>
+								<p>
+
+									<b>Note:</b> It may take up to 48 hours to activate your gift card from purchase date.<br/><br/>
+
+									You can redeem this Gift Card either online at www.klwines.com, phone 877-559-4637(Toll Free) or in our retail stores. K&amp;L Gift Cards never expire.
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<br/>
+					<br/>
+					<table style="width:800px;font-size:13px;">
+						<tr>
+							<td  style="width:265px;">
+								<font face="arial,helvetica"  color="#a52029">
+									<b style="text-decoration:underline">
+										K&amp;L Redwood City Store
+									</b>
+								</font><br/><br/>
+								3005 El Camino Real<br/>
+								Redwood City, CA, 94061<br/><br/>
+								(650) 364-8544 (Local)<br/>
+								(650) 364-4687 (Fax)<br/><br/>
+								<b>Store Hours:</b> M-F: 10-7pm,<br/> Sat: 9-7pm, Sun: 10-6pm
+							</td>
+							<td style="width:265px;">
+								<font face="arial,helvetica" color="#a52029">
+									<b style="text-decoration:underline">
+										K&amp;L San Francisco Store
+									</b>
+								</font>
+								<br/><br/>
+								855 Harrison Street<br/>
+								San Francisco, CA, 94107<br/><br/>
+								(415) 896-1734<br/>
+								(415) 896-1739 (Fax)<br/><br/>
+								<b>Store Hours:</b> M-F: 10am-7pm, <br/> Sat: 9-6pm, Sun: 11-6pm
+
+							</td>
+							<td style="width:265px;">
+								<font face="arial,helvetica" color="#a52029">
+									<b style="text-decoration:underline">
+										K&amp;L Hollywood Store
+									</b>
+								</font>
+								<br/><br/>
+								1400 Vine Street<br/>
+								Hollywood, CA, 90028<br/><br/>
+								(323) 464-WINE (9463)<br/>
+								(323) 836-0853 (Fax)<br/><br/>
+								<b>Store Hours:</b> M-F: 10-8pm, <br/> Sat: 10-8pm, Sun: 11-6pm
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<br/>
+				</body>
+			</html>

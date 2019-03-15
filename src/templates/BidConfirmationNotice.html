@@ -1,0 +1,91 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Bid/ShopperName"/>,
+				<br/><br/>
+				This is a confirmation of your maximum bid placed on the following lot:<br/>
+				<b><xsl:value-of select="Bid/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Bid/LotName"/>
+				</b> <br/><br/>
+				<table>
+					<tr>
+						<td>
+							Your Maximum Bid:
+						</td>
+						<td>
+							<xsl:value-of select="format-number(Bid/MaxBidAmount, '$#,##0.00')"/><xsl:text> </xsl:text>
+              (<xsl:value-of select="format-number(Bid/TotalWithPremium, '$#,##0.00')"/> including <xsl:value-of select="Bid/BuyerPremiumPercent"/>% buyer's premium)
+							<xsl:if test="Bid/MaxBidAmount &lt; Bid/ReservePrice">
+								 (reserve not met)
+							</xsl:if>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Your Bid Time:
+						</td>
+						<td>
+							<xsl:value-of select="myutils:ConvertDate(Bid/BidDateTime)"/> PT
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Auction End Time:
+						</td>
+						<td>
+							<xsl:value-of select="myutils:ConvertDate(Bid/AuctionEndDate)"/> PT
+						</td>
+					</tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="2"> This lot contains the following items:</td>
+          </tr>
+          <xsl:for-each select="LotItem">
+            <tr>
+              <td colsapn="2">
+                <xsl:value-of select="Vintage"/>	<xsl:text> </xsl:text>  <xsl:value-of select="ItemName"/>	<xsl:text> </xsl:text> (qty:<xsl:value-of select="Quantity"/>)
+              </td>              
+            </tr>
+          </xsl:for-each>
+				</table>
+        
+				<br/>
+        
+          <a target="_blank">
+					<xsl:attribute name="href">
+						<xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Bid/Sku"/>
+					</xsl:attribute>
+          Click Here</a> to increase your bid.
+
+        <br/><br/>
+        
+        **IMPORTANT: By placing this bid, you have consented to a binding contract to buy if should
+        you win the lot. For more information, view the <a href="{$BaseLinkUrlKey}/Auction/Information/AuctionInfo.aspx?section=TermsAndConditions#TermsAndConditions">
+          K&amp;L Wine Auctions Terms &amp; Conditions of Auction Sale
+        </a>.      
+        
+				<br/><br/>
+
+        To view your bidding history, track new auctions or pay for lots, visit the My Account page and select <a href="http://www.klwines.com/Account"><b>Auctions-Buying</b>
+        </a>
+        
+        If you have any questions, you can contact the auction department toll free at 877-559-4637 (ext 4060)for customers in the United States, or (650) 591-1705 for international customers. 
+                
+				<br/><br/>
+        
+				Thank you for shopping at K&amp;L Wine Merchants -- we appreciate your business.
+				<br/><br/>
+
+				---------------------------------------------------------------------
+				<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+				<br/>
+				---------------------------------------------------------------------
+			</body>
+		</html>

@@ -1,0 +1,51 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Bid/ShopperName"/>,
+				<br/><br/>
+				Congratulations! You have a second chance to buy the following lot:<br/>
+				<b>
+					<xsl:value-of select="Bid/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Bid/LotName"/>
+				</b> <br/><br/>
+
+				Although the lot did not reach the reserve price, the Seller of this lot has agreed to sell you the wine at your high bid of $<xsl:value-of select="format-number(Bid/CurrentBidAmount, '#,###,###.##')"/><br/><br />
+
+				If you should accept this offer, please click the "Pay Now" link below to confirm your shipping preferences and total purchase price.
+				<a target="_blank">
+					<xsl:attribute name="href">
+						<xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/BidPaymentConfirmation.aspx?BidId=<xsl:value-of select="Bid/BidId"/>
+					</xsl:attribute>
+					PAY NOW
+				</a>
+				<br/><br/>
+
+				**IMPORTANT: You must sign-on to your auction profile to confirm your bid and shipping preference in the next 3 days in order to purchase this auction lot. If you fail to claim this lot in the specified time frame, this offer will expire.
+				<br/><br/>
+
+				You can view the details of the lot by clicking the URL:
+				<a target="_blank">
+					<xsl:attribute name="href">
+						<xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Bid/Sku"/>
+					</xsl:attribute>
+					<xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Bid/Sku"/>
+				</a>
+				<br/><br/>
+
+				If you have any questions, you can contact us toll free at 877-559-4637 for customers in the United States, or (650) 591-1705 for international customers.
+				<br/><br/>
+				Thank you for shopping at K&amp;L Wine Merchants -- we appreciate your business.
+				<br/><br/>
+
+				---------------------------------------------------------------------
+				<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+				<br/>
+				---------------------------------------------------------------------
+				<br/>
+			</body>
+		</html>

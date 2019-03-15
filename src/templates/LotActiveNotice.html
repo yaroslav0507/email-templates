@@ -1,0 +1,87 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Lot/ShopperName"/>,
+				<br/><br/>
+				Your lot has been activated and the auction will be open for bidding at the following link:<br/>
+				<a target="_blank">
+					<xsl:attribute name="href">
+						<xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Lot/SKU"/>
+					</xsl:attribute>
+					http://www.klwines.com/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Lot/SKU"/>
+				</a>			
+
+				<br/><br/>
+				The details of your lot appear below. If you need to get in
+				touch with us about your lot, send an e-mail message to
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+				or call 650-591-1705.
+
+				<br/><br/>
+				You can always view your lot status by going to the My Account section of our website, and selecting "Auctions - Selling":<br/>
+				<a href="http://www.klwines.com/account.asp">http://www.klwines.com/account.asp</a>
+
+				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+
+
+				Lot Name: <xsl:value-of select="Lot/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Lot/LotName"/><br/>
+				Description: <xsl:value-of select="Lot/LotDescription"/>
+
+
+				<br/><br/>
+				Auction Start Time/Date: <xsl:value-of select="myutils:ConvertDate(Lot/AuctionStartDate)"/><br/>
+				Auction End Time/Date: <xsl:value-of select="myutils:ConvertDate(Lot/AuctionEndDate)"/>
+				<br/><br/>
+
+				<xsl:if test="Lot/KLAutoBidPrice &gt; 0">
+					Reserve: 
+					<xsl:value-of select="format-number(Lot/KLAutoBidPrice, '$#,##0.00')"/><br/><br/>
+				</xsl:if>
+
+				<xsl:if test="string-length(Lot/MinimumBidPrice) &gt; 0">
+					Starting Bid:
+					<xsl:value-of select="format-number(Lot/MinimumBidPrice, '$#,##0.00')"/><br/><br/>
+				</xsl:if>
+
+				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+
+				<table border="1" cellpadding="5">
+					<th>Item Name</th>
+					<th>Quantity</th>
+					<th>Bottle Size</th>
+					<th>Vintage</th>
+
+					<xsl:for-each select="LotItem">
+
+						<tr>
+							<td>
+								<xsl:value-of select="ItemName"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Quantity"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="BottleSize"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Vintage"/>
+							</td>
+						</tr>
+
+					</xsl:for-each>
+
+				</table><br/>
+
+				Thank you for working with K&amp;L Wine Merchants!
+
+				<br/><br/>-------------------------------------------------------------------------------<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+
+				<br/>-------------------------------------------------------------------------------<br/><br/>
+			</body>
+		</html>

@@ -1,0 +1,237 @@
+ <html>
+            <body style="width:400px">
+                <br/>
+                Thank you for your auction purchase from K&amp;L Wine Merchants.
+
+                <br/><br/>
+                Your order information appears below.  If you need to get in
+                touch with us about your order, send an e-mail message to
+                <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a> (or just reply to this message)
+                or call 650-591-1705.
+
+                <br/><br/>
+                As soon as we receive your order we begin working to pull all the items together, pack the order, and get it shipped out. We also attempt to schedule shipments at the BEGINNING of the week to avoid letting your wines sit in a carrier's warehouse over the weekend (where we can't control the environmental conditions). For a detailed explanation of our standard procedures, you can visit this website page:
+                <a href="http://www.klwines.com/transittime.asp">http://www.klwines.com/transittime.asp</a>
+
+                <br/><br/>
+                Additionally, you can check the status of your order at:
+                <xsl:choose>
+                    <xsl:when test="Order/OWCOrderId &gt; 0">
+                        <a target="_blank">
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$BaseLinkUrlKey"/>/shopping/receipt.asp?oid=<xsl:value-of select="Order/OrderId"/>|<xsl:value-of select="Order/OWCOrderId"/>&amp;sid=<xsl:value-of select="Order/ShopperNumId"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="$BaseLinkUrlKey"/>/shopping/receipt.asp?oid=<xsl:value-of select="Order/OrderId"/>|<xsl:value-of select="Order/OWCOrderId"/>&amp;sid=<xsl:value-of select="Order/ShopperNumId"/>
+                        </a>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <a target="_blank">
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$BaseLinkUrlKey"/>/shopping/receipt.asp?oid=<xsl:value-of select="Order/OrderId"/>&amp;sid=<xsl:value-of select="Order/ShopperNumId"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="$BaseLinkUrlKey"/>/shopping/receipt.asp?oid=<xsl:value-of select="Order/OrderId"/>&amp;sid=<xsl:value-of select="Order/ShopperNumId"/>
+                        </a>
+                    </xsl:otherwise>
+                </xsl:choose>
+
+                <br/><br/>
+                You can also modify your account settings in the My Account section of our website:
+                <a href="http://www.klwines.com/account.asp">http://www.klwines.com/account.asp</a>
+
+                <br/><br/>
+                -- K&amp;L Wine Merchants
+
+                <br/><br/>-------------------------------------------------------------------------------<br/><br/>
+                Your order reads as follows: <br/><br/>
+
+                E-mail address:	<xsl:value-of select="Order/Email"/><br/><br/>
+
+                Ship to:<br/>
+                <font face="arial,helvetica" size="2">
+                    <xsl:if test="string-length(Order/ShipName) &gt; 0">
+                        <xsl:value-of select="Order/ShipName"/>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipCompanyName) &gt; 0">
+                        <br/>
+                        <xsl:value-of select="Order/ShipCompanyName"/>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipAddress1) &gt; 0">
+                        <br/>
+                        <xsl:value-of select="Order/ShipAddress1"/>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipAddress2) &gt; 0">
+                        <br/>
+                        <xsl:value-of select="Order/ShipAddress2"/>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipCity) &gt; 0">
+                        <br/>
+                        <xsl:value-of select="Order/ShipCity"/>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipStateCD) &gt; 0">
+                        <xsl:choose>
+                            <xsl:when test="string-length(Order/ShipCity) &gt; 0">
+                                <xsl:text>, </xsl:text>
+                                <xsl:value-of select="Order/ShipStateCD"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <br/>
+                                <xsl:value-of select="Order/ShipStateCD"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipPostalCode) &gt; 0">
+                        <xsl:choose>
+                            <xsl:when test="string-length(Order/ShipCity) &gt; 0 or string-length(Order/ShipStateCD) &gt; 0">
+                                <xsl:text> </xsl:text>
+                                <xsl:value-of select="Order/ShipPostalCode"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <br/>
+                                <xsl:value-of select="Order/ShipPostalCode"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipCountry) &gt; 0">
+                        <br/>
+                        <xsl:value-of select="Order/ShipCountry"/>
+                    </xsl:if>
+                    <xsl:if test="string-length(Order/ShipPhone) &gt; 0">
+                        <br/>
+                        <xsl:value-of select="Order/ShipPhone"/>
+                    </xsl:if>
+
+                    <xsl:if test="string-length(Order/BOESellerPermitNumber) &gt; 0">
+                        <xsl:if test="string-length(Order/BOESellerPermitNumber) &gt; 4">
+                            <br/>
+                            BOE Permit #: xxx<xsl:value-of select="substring(Order/BOESellerPermitNumber, (string-length(Order/BOESellerPermitNumber) - 3))"/>
+                        </xsl:if>
+                        <xsl:if test="string-length(Order/BOESellerPermitNumber) &lt;= 4">
+                            <br/>
+                            BOE Permit #: xxx<xsl:value-of select="Order/BOESellerPermitNumber"/>
+                        </xsl:if>
+                    </xsl:if>
+
+                    <xsl:if test="string-length(Order/ABCLicenseNumber) &gt; 0">
+                        <xsl:if test="string-length(Order/ABCLicenseNumber) &gt; 4">
+                            <br/>
+                            Wholesale ABC License #: xxx<xsl:value-of select="substring(Order/ABCLicenseNumber, (string-length(Order/ABCLicenseNumber) - 3))"/>
+                        </xsl:if>
+                        <xsl:if test="string-length(Order/ABCLicenseNumber) &lt;= 4">
+                            <br/>
+                            Wholesale ABC License #: xxx<xsl:value-of select="Order/ABCLicenseNumber"/>
+                        </xsl:if>
+                    </xsl:if>
+                </font>
+
+                <br/><br/>-------------------------------------------------------------------------------<br/><br/>
+
+                <xsl:for-each select="Order">
+
+                    Order # <b>
+                        <xsl:value-of select="OrderId"/>
+                        <xsl:variable name="CurrentOrderId" select="OrderId" />
+
+                    </b>  on <xsl:value-of select="ms:format-date(OrderDate, 'MMM d, yyyy')"/><br/><br/>
+
+                    Shipment Method: <xsl:value-of select="ShipMethod"/><br/><br/>
+
+                    <table border="1" cellpadding="5">
+                        <th>Quantity</th>
+                        <th>Item</th>
+                        <th>Price</th>
+
+                        <xsl:for-each select="OrderItem">
+                            <xsl:choose>
+                                <xsl:when test="Sku = 500 or Sku = 14">
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <tr>
+                                        <td align="right">
+                                            <xsl:choose>
+                                                <xsl:when test=" string-length(LotID) = 0 and not(Sku = 757) ">
+                                                    <xsl:value-of select="Quantity"/>
+                                                </xsl:when>
+                                            </xsl:choose>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="ItemName"/>
+                                        </td>
+                                        <td align="right">
+                                            <xsl:value-of select="format-number(Price, '$#,##0.00')"/>
+                                        </td>
+                                    </tr>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:for-each>
+
+                        <tr>
+                            <td></td>
+                            <td align="right">Subtotal</td>
+                            <td align="right">
+                                <xsl:value-of select="format-number(sum(OrderItem[Sku != 14 and Sku != 500]/Price), '$#,##0.00')"/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td align="right">Tax</td>
+                            <td align="right">
+                                <xsl:value-of select="format-number(sum(OrderItem/TaxAmount), '$#,##0.00')"/>
+                            </td>
+                        </tr>
+
+                        <xsl:for-each select="OrderItem">
+                            <xsl:if test="Sku = 500 and Price &gt; 0">
+                                <tr>
+                                    <td></td>
+                                    <td align="right">Shipping</td>
+                                    <td align="right">
+                                        <xsl:value-of select="format-number(Price, '$#,##0.00')"/>
+                                    </td>
+                                </tr>
+                            </xsl:if>
+
+                            <xsl:if test="Sku = 14 and Price &gt; 0">
+                                <tr>
+                                    <td></td>
+                                    <td align="right">Insurance</td>
+                                    <td align="right">
+                                        <xsl:value-of select="format-number(Price, '$#,##0.00')"/>
+                                    </td>
+                                </tr>
+                            </xsl:if>
+                        </xsl:for-each>
+
+                        <tr>
+                            <td></td>
+                            <td align="right">Total</td>
+                            <td align="right">
+                                <xsl:value-of select="format-number(Total, '$#,##0.00')"/>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br/><br/><br/>
+
+                </xsl:for-each>
+
+                <xsl:variable name="shipWayCd" select="Order/ShipWayCd" />
+
+                <xsl:if test="(contains($shipWayCd, 'WillCall')) or (contains($shipWayCd, 'Hold'))">
+                    Due to space limitations, we need you to take possession of all will calls and holds within 90 days of the order date. Thank you for your cooperation.
+                    <br/><br/><br/>
+                </xsl:if>
+
+                Thank you for shopping at K&amp;L Wine Merchants
+
+                <br/><br/>-------------------------------------------------------------------------------<br/>
+
+                K&amp;L Wine Merchants<br/>
+
+                "Internet's Best Wine Site"  -- Money Magazine<br/>
+
+                <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+
+                <br/>-------------------------------------------------------------------------------<br/><br/>
+            </body>
+        </html>

@@ -29,17 +29,13 @@ a {
   font-size: $font-size-base;
   letter-spacing: $letter-spacing-base;
   text-decoration: underline;
-  color: #3d3d35;
+  color: $primary;
 }
 
 .text-brand {
   color: #AE0505;
   text-decoration: none;
   font-weight: bold;
-}
-
-.d-block {
-  display: block;
 }
 
 .full-width {
@@ -49,33 +45,34 @@ a {
 
 .bordered-container {
   border: 1px solid #d5d5d5;
-  padding: 13px 14px 10px;
+  padding: 13px 14px;
   border-radius: 5px;
   margin-bottom: 15px;
-}
-/**
- * Drop-in <br> class
- * Linebreak will match height of gutter-half
- */
-.gutter-break {
-  line-height: 100 / $font-size-base * $gutter-half * 1%;
+
+  &_filled {
+    border: none;
+    background-color: #f2f2f2;
+  }
 }
 
-/**
- * Replacement for <hr>
- * Complete client coverage, line-breaks tags are used to
- * space the horizontal line.
- *
- * Markdown example:
- * <td class="hr">
- *   <br><br><div>&nbsp;</div><br>
- * </td>
- */
-.hr {
-  @extend .gutter-break;
+.centered-banner-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 25px 0 15px;
 
-  div {
-    border-bottom: 1px solid #cccccc;
+  * {
+    font-size: 16px;
+  }
+}
+
+.pull {
+  &-left {
+    float: left;
+  }
+
+  &-right {
+    float: right;
   }
 }
 
@@ -127,17 +124,12 @@ p {
   margin: 0 0 14px;
 }
 
-td {
-  @extend .text-regular;
-}
-
 .page {
   &-header {
     text-align: left;
   }
 
   &-title {
-    font-size: 16px;
     margin-bottom: 25px;
   }
 
@@ -184,14 +176,5 @@ td {
 
 .link-default {
   text-decoration: none;
-}
-
-.pb-10 {
-  padding-bottom: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-  *[class="gmail-fix"] {
-    display: none !important;
-  }
+  padding: 5px 0;
 }

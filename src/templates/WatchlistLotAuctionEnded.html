@@ -1,0 +1,62 @@
+<html>
+      <body style="width:400px">
+        <br/>
+        Dear <xsl:value-of select="ShopperInformation/ShopperName"/>,
+
+        <br/><br/>
+        Thank you for tracking K&amp;L Wine Auctions. The auction has ended on the following lot:<br/>
+        <b>
+          <xsl:value-of select="LotInformation/LotVintagePrefix"/>
+          <xsl:text> </xsl:text>
+          <xsl:value-of select="LotInformation/LotName"/>
+        </b>
+        <br/><br/>
+
+        Winning Bid: <xsl:choose>
+        <xsl:when test="Bid/CurrentBidAmount >= 0">
+          <xsl:value-of select="format-number(Bid/CurrentBidAmount, '$#,##0.00')"/>
+        </xsl:when>
+        <xsl:otherwise>$0</xsl:otherwise>
+      </xsl:choose>
+      <br/><br/>
+
+        <a target="_blank">
+          <xsl:attribute name="href">
+            <xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="LotInformation/SKU"/>
+          </xsl:attribute>
+          Click Here
+        </a> to view the details of this lot.
+        <br/><br/>
+       
+
+        If you would like to learn more about when your favorite wines become available, please visit the K&amp;L Waiting List page:
+        <a href="http://www.klwines.com/waitinglist/help">http://www.klwines.com/waitinglist/help</a>
+        <br/><br/>
+
+        You may also update your Email Preferences in the My Account section of the website to receive news &amp; alerts on upcoming auction lots.
+        <a href="http://www.klwines.com/account">http://www.klwines.com/account</a>
+        <br/><br/>
+
+        If you have any questions, you can contact the auction department toll free at 877-559-4637 (ext 4060) for customers in the United States, or (650) 591-1705 for international customers.
+        <br/><br/>
+
+        To view your bidding history, track new auctions or pay for lots, visit the My Account page and select <a href="http://www.klwines.com/Account">
+          <b>Auctions-Buying</b>
+        </a>
+        <br/><br/>
+        
+        Thank you for shopping at K&amp;L Wine Merchants -- we appreciate your business.
+        <br/><br/>
+
+        ---------------------------------------------------------------------
+        <br/>
+
+        K&amp;L Wine Merchants<br/>
+
+        "Internet's Best Wine Site"  -- Money Magazine<br/>
+
+        <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+        <br/>
+        ---------------------------------------------------------------------
+      </body>
+    </html>

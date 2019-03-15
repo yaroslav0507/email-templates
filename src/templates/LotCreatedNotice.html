@@ -1,0 +1,190 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Lot/ShopperName"/>,
+				<br/><br/>
+
+				A lot has been created on your behalf by the auction administrator.
+				
+				<br/><br/>
+				The details of your lot appear below.  If you need to get in
+				touch with us about your lot, send an e-mail message to
+				<a href="mailto:auctionreview@klwines.com">auctionreview@klwines.com</a>
+				or call 650-591-1705.
+
+				<br/><br/>
+
+				You can always view your lot details by going to the "Auctions - Selling" link in the My account section of our website:<br/>
+				<a href="http://www.klwines.com/account.asp">http://www.klwines.com/account.asp</a>
+
+				<br/><br/>
+
+				Lot Name: <xsl:value-of select="Lot/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Lot/LotName"/><br/>
+				Description: <xsl:value-of select="Lot/LotDescription"/><br/>
+				<xsl:if test="string-length(Lot/MinimumBidPrice) &gt; 0">
+					<br/>Minimum Bid Price:
+					<xsl:value-of select="format-number(Lot/MinimumBidPrice, '$#,##0.00')"/>
+				</xsl:if>
+
+				<br/><br/>
+				Lot Items PickUp Address:<br/>
+				<xsl:if test="string-length(Lot/PickUpAddressName) &gt; 0">
+					<xsl:value-of select="Lot/PickUpAddressName"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpCompanyName) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PickUpCompanyName"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpAddress1) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PickUpAddress1"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpAddress2) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PickUpAddress2"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpCity) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PickUpCity"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpStateCD) &gt; 0">
+					<xsl:choose>
+						<xsl:when test="string-length(Lot/PickUpCity) &gt; 0">
+							<xsl:text>, </xsl:text>
+							<xsl:value-of select="Lot/PickUpStateCD"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<br/>
+							<xsl:value-of select="Lot/PickUpStateCD"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpPostalCode) &gt; 0">
+					<xsl:choose>
+						<xsl:when test="string-length(Lot/PickUpCity) &gt; 0 or string-length(Lot/PickUpStateCD) &gt; 0">
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="Lot/PickUpPostalCode"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<br/>
+							<xsl:value-of select="Lot/PickUpPostalCode"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PickUpCountry) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PickUpCountry"/>
+				</xsl:if>
+
+
+				<br/><br/>
+				Auction Sale Payment Address:<br/>
+				<xsl:if test="string-length(Lot/PaymentAddressName) &gt; 0">
+					<xsl:value-of select="Lot/PaymentAddressName"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentCompanyName) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PaymentCompanyName"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentAddress1) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PaymentAddress1"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentAddress2) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PaymentAddress2"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentCity) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PaymentCity"/>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentStateCD) &gt; 0">
+					<xsl:choose>
+						<xsl:when test="string-length(Lot/PaymentCity) &gt; 0">
+							<xsl:text>, </xsl:text>
+							<xsl:value-of select="Lot/PaymentStateCD"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<br/>
+							<xsl:value-of select="Lot/PaymentStateCD"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentPostalCode) &gt; 0">
+					<xsl:choose>
+						<xsl:when test="string-length(Lot/PaymentCity) &gt; 0 or string-length(Lot/PaymentStateCD) &gt; 0">
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="Lot/PaymentPostalCode"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<br/>
+							<xsl:value-of select="Lot/PaymentPostalCode"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:if>
+				<xsl:if test="string-length(Lot/PaymentCountry) &gt; 0">
+					<br/>
+					<xsl:value-of select="Lot/PaymentCountry"/>
+				</xsl:if>
+
+				<br/>
+				<xsl:if test="string-length(Lot/ListingFee) &gt; 0">
+					<br/> Listing Fee: <xsl:value-of select="format-number(Lot/ListingFee, '$#,##0.00')"/>
+				</xsl:if>
+
+				<xsl:if test="string-length(Lot/FeaturedLotUpgradeFee) &gt; 0">
+					<br/> Featured Lot Fee: <xsl:value-of select="format-number(Lot/FeaturedLotUpgradeFee, '$#,##0.00')"/>
+				</xsl:if>
+
+				<xsl:if test="string-length(Lot/ShippingMaterialDeliveryCost) &gt; 0">
+					<br/> Shipping Material Delivery Cost: <xsl:value-of select="format-number(Lot/ShippingMaterialDeliveryCost, '$#,##0.00')"/>
+				</xsl:if>
+
+				<xsl:if test="string-length(Lot/InboundShippingCost) &gt; 0">
+					<br/> Inbound Shipping Cost: <xsl:value-of select="format-number(Lot/InboundShippingCost, '$#,##0.00')"/>
+				</xsl:if>
+
+				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+
+				<table border="1" cellpadding="5">
+					<th>Item Name</th>
+					<th>Quantity</th>
+					<th>Bottle Size</th>
+					<th>Vintage</th>
+
+					<xsl:for-each select="LotItem">
+
+						<tr>
+							<td>
+								<xsl:value-of select="ItemName"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Quantity"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="BottleSize"/>
+							</td>
+							<td align="right">
+								<xsl:value-of select="Vintage"/>
+							</td>
+						</tr>
+
+					</xsl:for-each>
+
+				</table>
+
+				<br/><br/><br/>
+
+				Thank you for using klwines.com for your auction needs!
+
+				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+
+				KL Wine Merchants<br/><br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/><br/>
+
+				<a href="mailto:questions@klwines.com">questions@klwines.com</a> , <a href="klwines.com">http://www.klwines.com/</a>
+
+				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+			</body>
+		</html>

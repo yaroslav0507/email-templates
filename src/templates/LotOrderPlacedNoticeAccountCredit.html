@@ -1,0 +1,87 @@
+<html>
+      <body style="width:400px">
+        <br/>
+        Dear <xsl:value-of select="Lot/ShopperName"/>,
+        <br/><br/>
+        Congratulations! Your auction lot listed below has sold:<br/><br/>
+
+        <xsl:value-of select="Lot/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Lot/LotName"/><br/>       
+
+        <br/><br/>
+
+        <xsl:if test="string-length(Lot/SalesPrice) &gt; 0">
+          <br/> Winning Bid: <xsl:value-of select="format-number(Lot/SalesPrice, '$#,##0.00')"/>
+        </xsl:if>
+
+        <xsl:if test="string-length(Lot/ListingFee) &gt; 0">
+          <br/> Listing Fee: <xsl:value-of select="format-number(Lot/ListingFee, '$#,##0.00')"/>
+        </xsl:if>
+
+        <xsl:if test="Lot/RelistingFee &gt; 0">
+          <br/> ReListing Fee: <xsl:value-of select="format-number(Lot/RelistingFee, '$#,##0.00')"/>
+        </xsl:if>
+
+        <xsl:if test="Lot/ShippingMaterialDeliveryCost &gt; 0">
+          <br/> Shipping Material Delivery Cost: <xsl:value-of select="format-number(Lot/ShippingMaterialDeliveryCost, '$#,##0.00')"/>
+        </xsl:if>
+
+        <xsl:if test="Lot/InboundShippingCost &gt; 0">
+          <br/> Inbound Shipping Cost: <xsl:value-of select="format-number(Lot/InboundShippingCost, '$#,##0.00')"/>
+        </xsl:if>
+
+
+        <table>
+          <tr>
+            <td colspan="2"> This lot contains the following items:</td>
+          </tr>
+          <xsl:for-each select="LotItem">
+            <tr>
+              <td colsapn="2">
+                <xsl:value-of select="Vintage"/>  <xsl:value-of select="ItemName"/> (qty:<xsl:value-of select="Quantity"/>)
+              </td>
+            </tr>
+          </xsl:for-each>
+        </table>
+
+        <br/><br/>
+
+        <a target="_blank">
+          <xsl:attribute name="href">
+            <xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Lot/SKU"/>
+          </xsl:attribute>
+          Click here
+        </a>
+        to view the auction screen for your lot.
+        <br/><br/>
+
+        Proceeds from this lot will become available in your K&amp;L Credit Account once the buyer of your wine completes payment. 
+        This usually takes 2 to 5 days and will not exceed a period of 30 days from the sale of your wine. 
+        Apply your K&amp;L store credit to any future online retail or in-store purchases and pay no seller commission.
+        
+        <br/><br/>
+        To view a full transaction history of your auction sales and withdrawals, request a check or track your consignments, please visit the 
+        <a target="_blank">
+        <xsl:attribute name="href">
+          <xsl:value-of select="$BaseLinkUrlKey"/>/Auction/AuctionLot/AuctionLanding.aspx
+        </xsl:attribute>
+        <b>Auctions-Selling</b>
+        </a>  page.
+        <br/><br/>
+        If you have any questions, please email <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>. You can contact the auction department toll free at 877-559-4637 (ext 4060) for customers in the United States, or (650) 591-1705 for international customers.
+
+
+        <br/><br/>
+
+        Thank you for working with K&amp;L Wine Merchants!
+
+        <br/><br/>-------------------------------------------------------------------------------<br/>
+
+        K&amp;L Wine Merchants<br/>
+
+        "Internet's Best Wine Site"  -- Money Magazine<br/>
+
+        <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+
+        <br/>-------------------------------------------------------------------------------<br/><br/>
+      </body>
+    </html>

@@ -17,7 +17,9 @@ class PreflightPlugin {
 
     this.options.directories.forEach((dir) => {
       fs.readdirSync(dir).forEach(fileName => {
-        this.templates[fileName] = path.resolve('.', dir, fileName);
+        if (fileName.indexOf('.ejs') > 0) {
+          this.templates[fileName] = path.resolve('.', dir, fileName);
+        }
       });
     });
   }
@@ -40,7 +42,6 @@ class PreflightPlugin {
     compiler.plugin('emit', (compilation, done) => {
       Object.entries(compilation.assets).forEach(([filename, asset]) => {
         if (filename.endsWith('.html')) {
-          let compiled = filename.replace('.html', '') + '_compiled.html';
           let source = juice(asset.source(), {
             inlinePseudoElements: this.options.inlinePseudoElements,
           });

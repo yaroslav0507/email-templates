@@ -1,0 +1,73 @@
+<html>
+			<body style="width:400px">
+				<br/>
+				Dear <xsl:value-of select="Bid/ShopperName"/>,
+				<br/><br/>
+				Congratulations! You have won the following lot:<br/>
+				<b>
+					<xsl:value-of select="Bid/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Bid/LotName"/>
+				</b> <br/><br/>
+				Sale Price: <xsl:value-of select="format-number(Bid/CurrentBidAmount, '$#,##0.00')"/>
+        <xsl:text> </xsl:text>  (<xsl:value-of select="format-number(Bid/CurrentBidWithPremium, '$#,##0.00')"/> including <xsl:value-of select="Bid/BuyerPremiumPercent"/>% buyer's premium)
+      
+        
+        <br/><br />
+
+        <table>
+          <tr>
+            <td> This lot contains the following items:</td>
+          </tr>
+          <xsl:for-each select="LotItem">
+            <tr>
+              <td>
+                <xsl:value-of select="Vintage"/>	<xsl:text> </xsl:text> <xsl:value-of select="ItemName"/>	<xsl:text> </xsl:text>(qty:<xsl:value-of select="Quantity"/>)
+              </td>
+            </tr>
+          </xsl:for-each>
+        </table>
+        <br/><br />
+
+				**IMPORTANT: The deadline to confirm your shipping preferences and complete your order is <xsl:value-of select="myutils:ConvertDate(Bid/ExpirationDate)"/>.
+				Per the terms of the auction agreement, K&amp;L Wine Merchants reserves the right to automatically 
+				charge your credit card and place an order on your behalf after this date.<br/><br/>
+
+				Please click on the "Pay Now" link below to confirm your shipping preferences and total purchase price.<br/>
+				<a target="_blank">
+					<xsl:attribute name="href"><xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/BidPaymentConfirmation.aspx?BidId=<xsl:value-of select="Bid/BidId"/></xsl:attribute>
+					PAY NOW
+				</a>
+				<br/><br/>
+
+        <a target="_blank">
+          <xsl:attribute name="href">
+            <xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Bid/Sku"/>
+          </xsl:attribute>
+          Click here
+        </a> to view details of this lot.
+        <br/><br/>
+
+
+        K&amp;L Wine Merchants has temperature-controlled lockers available in our new San Francisco store and San Carlos, California fulfillment
+        center. If you
+        are interested in securing a locker to store your auction items, please contact
+        <a href="mailto:onsite-lockers@klwines.com">onsite-lockers@klwines.com</a>.<br/><br/>
+
+
+        If you have any questions, you can contact the auction department toll free at 877-559-4637 (ext 4060) for customers in the United States, or (650) 591-1705 for international customers.
+        <br/><br/>
+        Thank you for shopping at K&amp;L Wine Merchants-- we appreciate your business.
+        <br/><br/>
+
+				---------------------------------------------------------------------
+				<br/>
+
+				K&amp;L Wine Merchants<br/>
+
+				"Internet's Best Wine Site"  -- Money Magazine<br/>
+
+				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+				<br/>
+				---------------------------------------------------------------------
+				<br/>
+			</body>
+		</html>

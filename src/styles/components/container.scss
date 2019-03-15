@@ -12,28 +12,3 @@
 .wrapper {
   width: 100%;
 }
-
-.container {
-  width: $container-width;
-  max-width: $container-width;
-  background-color: color-get(white);
-}
-
-.container-padding {
-  padding: $gutter-half;
-}
-
-@include breakpoint(threshold) {
-  .force-row,
-  .container {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-}
-
-@include breakpoint(mobile) {
-  .container-padding {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-  }
-}

@@ -47,9 +47,6 @@ const config = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new CopyWebpackPlugin([{
-      from: './src/images',
-    }]),
     new PreflightPlugin(),
   ],
   stats: {

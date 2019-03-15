@@ -1,0 +1,21 @@
+Dear @Model.FullName:
+
+Thanks very much for registering online with K&L Wine Merchants.
+In addition to being able to maintain your own personal profile
+(saving you time each time you place an order), any online or
+telephone orders you place in the future will be available for you
+to look at any time you log on to the klwines.com Web site.
+
+Please save the following information for your records:
+
+Email Address: @Model.Email
+Password:      (not displayed)
+
+Cheers!
+
+K&L Wine Merchants
+"Internet's Best Wine Shop"
+-Money Magazine
+http://www.klwines.com
+800-247-5987
+orders@klwines.com

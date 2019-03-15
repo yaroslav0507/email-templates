@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body style="font-family:sans-serif">
+    <p>Dear @Model.Shopper.FirstName @Model.Shopper.LastName</p>
+    
+    <p>Thank you for your check request.</p>
+
+    <p>
+        Your check information appears below. If you need to get in touch with us about this payment, send an e-mail message to 
+        auctions@klwines.com (or just reply to this email) or call 800-247-5987 ext 4060.
+    </p>
+
+    <p>
+        You will get a confirmation email when your check has been processed. 
+    </p>
+
+    <div><b>------------------------------------------------------------</b></div>
+    <div>Your check request reads as follows:</div>
+    <div style="margin-top: 15px; margin-bottom: 15px;">Amount: @Model.Amount.ToString("c2")</div>    
+    <div>Payee Name:</div>
+    <div>@Model.PayeeName</div>
+    <div>Ship to:</div>
+    @if (Model.PayeeCompanyName != null && Model.PayeeCompanyName.Length > 0)
+    { 
+        <div>@Model.PayeeCompanyName</div>
+    }
+    <div>@Model.PayeeAddress1</div>
+    @if (Model.PayeeAddress2 != null && Model.PayeeAddress2.Length > 0)
+    { 
+        <div>@Model.PayeeAddress2</div>
+    }
+
+    <div>@Model.PayeeCity, @Model.PayeeStateCode @Model.PayeePostalCode</div>
+    <div>@Model.PayeeCountry</div>
+              
+    <p>To view a full transaction history of your auction sales and withdrawals, request a check or track your consignments, please visit the <a href="http://www.klwines.com/Account">Auctions-Selling</a>  page. </p>
+    <p>Thank you for shopping at klwines.com!</p>
+    <p>-------------------------------------------------------------</p>
+
+    <div>klwines.com</div>
+    <div>"Internet's Best Wine Shop"</div>
+    <div>-Money Magazine</div>
+    <div>http://www.klwines.com</div>
+</body>
+</html>
