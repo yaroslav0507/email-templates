@@ -1,0 +1,31 @@
+<table class="order-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <thead>
+  <tr>
+    <th class="order-table__cell">&nbsp;</th>
+    <th class="order-table__cell">Item</th>
+    <th class="order-table__cell">Quantity</th>
+    <th class="order-table__cell">Unit Price</th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+  <% items.forEach(function(item){ %>
+    <tr>
+      <td class="order-table__cell">
+        <img
+          src="<%= item.img %>"
+          alt="<%= item.name %>"
+          class="order-table__product-image"
+        >
+      </td>
+      <td class="order-table__cell">
+        <%= item.name %>
+      </td>
+      <td class="order-table__cell"><%= item.qty %></td>
+      <td class="order-table__cell"><%= item.price %></td>
+    </tr>
+  <% }); %>
+
+  </tbody>
+</table>

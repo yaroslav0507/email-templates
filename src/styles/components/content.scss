@@ -50,19 +50,20 @@ a {
   margin-bottom: 15px;
 
   &_filled {
-    border: none;
+    padding: 0;
+    border: 13px solid #f2f2f2;
     background-color: #f2f2f2;
   }
 }
 
 .centered-banner-text {
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   margin: 25px 0 15px;
 
   * {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 

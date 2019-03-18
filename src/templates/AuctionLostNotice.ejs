@@ -7,7 +7,10 @@
 </p>
 
 <p>
-  <b>2015 Salcheto Vino Nobile di Montepulciano</b>
+  <b>
+    2013 Harlan Estate Napa Valley Bordeaux Blend (OWC), <br>
+    2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)
+  </b>
 </p>
 
 <table
@@ -20,7 +23,7 @@
       <span>Highest Bid:</span>
 
       <span class="pull-right space-right">
-        <b>$249.00</b>
+        <b>$15,900.00</b>
       </span>
     </td>
 
@@ -30,7 +33,7 @@
       <span>Winning Bid:</span>
 
       <span class="pull-right">
-        <b>$249.00</b>
+        <b>$15,900.00</b>
       </span>
     </td>
   </tr>
@@ -46,49 +49,19 @@
 
 <h1>This lot contains the following items:</h1>
 
-<table class="order-table" border="0" cellpadding="0" cellspacing="0" width="100%">
-  <thead>
-  <tr>
-    <th class="order-table__cell">&nbsp;</th>
-    <th class="order-table__cell">Item</th>
-    <th class="order-table__cell">Quantity</th>
-    <th class="order-table__cell">Unit Price</th>
-  </tr>
-  </thead>
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/auctions/0131962177755079046.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  qty: 6,
+  price: '$5,634.00'
+}, {
+  img: 'https://www.klwines.com//images/auctions/0131962177880610459.jpg',
+  name: '2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)',
+  qty: 3,
+  price: '$6,300.00'
+}]}) %>
 
-  <tbody>
-  <tr>
-    <td class="order-table__cell">
-      <img
-        src="https://www.klwines.com//images/auctions/0131962177755079046.jpg"
-        alt="2008 Louis Roederer 'Cristal' Brut Champagne"
-        class="order-table__product-image"
-      >
-    </td>
-    <td class="order-table__cell">
-      2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)
-    </td>
-    <td class="order-table__cell">6</td>
-    <td class="order-table__cell">$5,634.00</td>
-  </tr>
-
-  <tr>
-    <td class="order-table__cell">
-      <img
-        src="https://www.klwines.com//images/auctions/0131962177880610459.jpg"
-        alt="2008 Louis Roederer 'Cristal' Brut Champagne"
-        class="order-table__product-image"
-      >
-    </td>
-    <td class="order-table__cell">
-      2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)
-    </td>
-    <td class="order-table__cell">3</td>
-    <td class="order-table__cell">$6,300.00</td>
-  </tr>
-
-  </tbody>
-</table>
+<%- include('./src/shared/total', { subtotal: '$11,934.00', salesTax: '$2,386.60', total: '$14,320.00'}) %>
 
 <table width="100%">
   <tbody>

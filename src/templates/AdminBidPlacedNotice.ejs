@@ -48,37 +48,12 @@
 
 <h1>This lot contains the following items:</h1>
 
-<table class="order-table" border="0" cellpadding="0" cellspacing="0" width="100%">
-  <thead>
-  <tr>
-    <th class="order-table__cell">&nbsp;</th>
-    <th class="order-table__cell">Item</th>
-    <th class="order-table__cell">Quantity</th>
-    <th class="order-table__cell">Unit Price</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <tr>
-    <td class="order-table__cell">
-      <a target="_blank" href="https://www.klwines.com/p/i?i=1344997">
-        <img
-          src="https://www.klwines.com//images/skus/1344997l.jpg"
-          alt="2008 Louis Roederer 'Cristal' Brut Champagne"
-          class="order-table__product-image"
-        >
-      </a>
-    </td>
-    <td class="order-table__cell">
-      <a target="_blank" href="https://www.klwines.com/p/i?i=1344997" class="link-default">
-        2008 Louis Roederer "Cristal" Brut Champagne
-      </a>
-    </td>
-    <td class="order-table__cell">1</td>
-    <td class="order-table__cell">$249.00</td>
-  </tr>
-  </tbody>
-</table>
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1344997l.jpg',
+  name: '2008 Louis Roederer "Cristal" Brut Champagne',
+  qty: 1,
+  price: '$249.00'
+}]}) %>
 
 <table width="100%">
   <tbody>
@@ -103,7 +78,7 @@
       </p>
 
       <p>
-        To view your bidding history, track new auctions or pay for lots, visit the My Account page and select
+        To view your bidding history, track new auctions or pay for lots, visit the My Account page and select&nbsp;
         <a href="https://www.klwines.com/Account"><b>Auctions-Buying</b></a>
       </p>
 
