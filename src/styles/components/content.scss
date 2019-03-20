@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  line-height: 1.5em;
+  line-height: $line-height-base;
   font-size: $font-size-base;
   letter-spacing: $letter-spacing-base;
   text-decoration: underline;
@@ -140,7 +140,7 @@ p {
 }
 
 .space-right {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .footer {

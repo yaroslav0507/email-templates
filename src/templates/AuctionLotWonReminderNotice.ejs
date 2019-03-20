@@ -1,0 +1,81 @@
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  Congratulations! You have won the following lot:
+</p>
+
+<p>
+  <b>
+    2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)
+  </b>
+</p>
+
+
+<table
+  class="bordered-container bordered-container_filled"
+  width="100%"
+  style="table-layout: fixed"
+>
+  <tr>
+    <td>
+      <span>Sale Price:</span>
+
+      <span class="pull-right space-right">
+        <b>$249.00</b> ($224.10 including 10% buyer's premium)
+      </span>
+    </td>
+  </tr>
+</table>
+
+<h1>This lot contains the following items:</h1>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  price: '$224.00'
+}]}) %>
+
+<table width="100%">
+  <tbody>
+  <tr>
+    <td>
+      <p>
+        <span class="text-brand">**</span>
+        IMPORTANT: You must confirm your shipping preferences and complete your order no later than 22/07/2019. Per the terms of the auction agreement,
+        K&L Wine Merchants reserves the right to automatically charge your credit card and place an order on your behalf after this date.
+      </p>
+
+      <p>
+        Please click on the "Pay Now" link below to confirm your shipping preferences and total purchase price.
+      </p>
+
+      <p>
+        <a target="_blank" class="text-brand" href="https://www.klwines.com/p/i?i=1403310/Auction/Bidding/BidPaymentConfirmation.aspx?BidId=1403310">
+          PAY NOW
+        </a>
+      </p>
+
+      <a target="_blank" href="https://www.klwines.com/p/i?i=1403310">Click here</a>&nbsp;to view details of this lot.
+
+      <p>
+        K&amp;L Wine Merchants has temperature-controlled lockers available in our new San Francisco store and San Carlos, California fulfillment
+        center. If you are interested in securing a locker to store your auction items, please contact
+        <a href="mailto:onsite-lockers@klwines.com">onsite-lockers@klwines.com</a>.
+      </p>
+
+      <p>
+        If you have any questions, you can contact the auction department toll-free at <a href="tel:8775594637" class="link-default">877-559-4637</a>
+        (ext 4060) for customers in the United States, or <a href="tel:6505911705" class="link-default">(650) 591-1705</a> for international customers.
+      </p>
+
+      <p class="centered-banner-text">
+        Thank you for shopping at <a href="https://www.klwines.com" class="link-default">klwines.com</a>!
+      </p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>

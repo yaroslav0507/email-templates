@@ -13,14 +13,18 @@
   <% items.forEach(function(item){ %>
     <tr>
       <td class="order-table__cell">
-        <img
-          src="<%= item.img %>"
-          alt="<%= item.name %>"
-          class="order-table__product-image"
-        >
+        <a target="_blank" href="<%= item.link %>">
+          <img
+            src="<%= item.img %>"
+            alt="<%= item.name %>"
+            class="order-table__product-image"
+          >
+        </a>
       </td>
       <td class="order-table__cell">
-        <%= item.name %>
+        <a target="_blank" href="<%= item.link %>">
+          <%= item.name %>
+        </a>
       </td>
       <td class="order-table__cell"><%= item.qty %></td>
       <td class="order-table__cell"><%= item.price %></td>
