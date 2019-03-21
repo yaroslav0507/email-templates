@@ -120,6 +120,10 @@ h3 {
   }
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 p {
   @extend .text-regular;
   margin: 0 0 14px;
