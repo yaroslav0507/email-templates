@@ -1,83 +1,50 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<body>
-    @if (!string.IsNullOrWhiteSpace(Model.GiftMessage.FromName))
-    {
-        <p>You have received a gift from @Model.GiftMessage.FromName.</p>
-    }
-    else
-    {
-        <p>You have received a gift</p>    
-    }
+<h1>
+  <p></p>
+  <p>You have received a gift from Richard Branson.</p>
+</h1>
 
-    <p>The gift order information appears below.  If you need to get in touch with us about your order, send an e-mail message to customerservice@klwines.com (or just reply to this message) or call 800-247-5987.</p>
+<p>The gift order information appears below.  If you need to get in touch with us about your order, send an e-mail message to
+  <a href="mailto:customerservice@klwines.com" class="text-brand">customerservice@klwines.com</a> (or just reply to this message) or call
+  <a href="tel:8002475987">800-247-5987</a>.</p>
 
-    <p>
-        As soon as we receive the order we begin working to pull all the items together, pack the order, and get it shipped out.
-    </p>
+<p>
+  As soon as we receive the order we begin working to pull all the items together, pack the order, and get it shipped out.
+</p>
 
-    <p>You will receive another email when order is shipped or ready for pickup.</p>
+<p>You will receive another email when order is shipped or ready for pickup.</p>
 
-    <p>Your gift order as follows:</p>
+<p>Your gift order as follows:</p>
 
-    <p>E-mail address: @Model.GiftMessage.RecipientEmail</p>
+<p>E-mail address: <a href="mailto:sample-email@mail.com" class="text-brand">sample-email@mail.com</a></p>
 
-    <div>Ship to:</div>
-    <div>@Model.ShippingAddress.Name</div>
-    @if (Model.ShippingAddress.CompanyName != null && Model.ShippingAddress.CompanyName.Length > 0)
-    { 
-        <div>@Model.ShippingAddress.CompanyName</div>
-    }
-    @if (Model.ShippingAddress.CompanyName != null && Model.ShippingAddress.CompanyName.Length > 0)
-    { 
-        <div>@Model.ShippingAddress.CompanyName</div>
-    }
-    <div>@Model.ShippingAddress.Address1</div>
-    @if (Model.ShippingAddress.Address2 != null && Model.ShippingAddress.Address2.Length > 0)
-    { 
-        <div>@Model.ShippingAddress.Address2</div>
-    }
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      Ship to:
+    </td>
+    <td>
+      <b>Tech Fabric LLC, 1530 E Williams Field Rd, Suite #201 Gilbert, AZ 85295</b>
+    </td>
+  </tr>
+</table>
 
-    <div>@Model.ShippingAddress.City, @Model.ShippingAddress.StateCD @Model.ShippingAddress.PostalCode</div>
-    <div>@Model.ShippingAddress.Country</div>
-    <div style="margin-top: 15px;">Tel: @Model.ShippingAddress.Phone</div>
-    <p>------------------------------------------------------------</p>
-    @foreach (var shipment in Model.Shipments)
-    {
-        <div style="margin-bottom: 15px; margin-top: 15px;">Order# @shipment.OrderId on @Model.OrderDate.ToShortDateString()</div>
+<h1>
+  <p>Order # 36704118 on 1/18/2019</p>
+</h1>
 
-        <table>
-            @foreach (var shipmentItem in shipment.Items)
-            {
-                <tr>
-                    <td>
-                        <img src="http://www.klwines.com/@(shipmentItem.MediumImageURL)" /></td>
-                    <td>@shipmentItem.DisplayName</td>
-                    <td style="font-style: italic">(qty: @shipmentItem.Quantity)</td>
-                </tr>
-            }
-        </table>
+<p>
+  Shipping Method: <b>Will Call - Redwood City</b>
+</p>
 
-        <div style="margin-top: 15px">Shipment Method: @shipment.ShipwayDescription</div>
-        
-            if (!string.IsNullOrWhiteSpace(shipment.ShipwayCode) &&
-                                (shipment.ShipwayCode.ToLower().Contains("willcall") || shipment.ShipwayCode.ToLower().Contains("hold")))
-            {
-        <br />
-        <div>Due to space limitations, we need you to take possession of all will calls and holds within 90 days of the order date. Thank you for your cooperation.</div>    
-            }
+<%- include('./src/shared/order', { items: [{
+  img: 'https://curage.ca/wp-content/uploads/sites/5/2016/05/GC-Gift-Card.jpg',
+  name: 'Gift Card',
+  qty: 1,
+  price: '$0.00'
+}]}) %>
 
-            if (Model.GiftMessage != null && !string.IsNullOrWhiteSpace(Model.GiftMessage.GiftMessage))
-            {
-        <div>Gift Message: @Model.GiftMessage.GiftMessage</div>
-            }
-    }
+<p>Due to space limitations, we need you to take possession of all will calls and holds within 90 days of the order date. Thank you for your cooperation.</p>
 
-    <p>Thank you for shopping at klwines.com!</p>
-    <p>-------------------------------------------------------------</p>
+<%- include('./src/shared/thanksForShopping') %>
 
-    <div>klwines.com</div>
-    <div>"Internet's Best Wine Shop"</div>
-    <div>-Money Magazine</div>
-    <div>http://www.klwines.com</div>
-</body>
-</html>
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
