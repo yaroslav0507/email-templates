@@ -1,0 +1,73 @@
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  This is a confirmation you are tracking the following lot:
+</p>
+
+<p>
+  <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      <p>Current Bid:</p>
+    </td>
+
+    <td>
+      <p>
+        <b>$10.99</b>
+        (as of 04/17/2018 12:06pm PT)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Auction End Time:
+    </td>
+    <td>
+      <a href="#" class="link-default">04/17/2018 03:32pm PT</a>
+    </td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<h1>This lot contains the following items:</h1>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  price: '$10.99'
+}]}) %>
+
+<table width="100%">
+  <tbody>
+  <tr>
+    <td>
+      <p>
+        <a
+          target="_blank"
+          href="https://klwines.com/Auction/Bidding/AuctionBidDetail.aspx?sku=1403810"
+          class="text-brand"
+        >
+          Click Here
+        </a>to increase your bid.
+      </p>
+
+      <p>
+        To view your bidding history, track new auctions or pay for lots, visit the My Account page and select&nbsp;
+        <a href="https://www.klwines.com/Account"><b>Auctions-Buying</b></a>
+      </p>
+
+      <%- include('./src/shared/ifYouHaveAnyQuestions') %>
+
+      <%- include('./src/shared/thanksForShopping') %>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
