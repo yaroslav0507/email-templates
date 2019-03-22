@@ -1,0 +1,110 @@
+<h2>
+  <p>&nbsp;</p>
+  <p>
+    Thank you for ordering from <a href="https://klwines.com" class="link-default">klwines.com</a>
+  </p>
+</h2>
+
+<p>
+  Your order information appears below.  If you need to get in
+  touch with us about your order, send an e-mail message to
+  <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a> (or just reply to this message)
+  or call <a href="tel:8002475987">800-247-5987</a>.
+</p>
+
+<p>
+  As soon as we receive your order we begin working to pull all the items together, pack the order, and get it shipped out.
+  We also attempt to schedule shipments at the BEGINNING of the week to avoid letting your wines sit in a carrier's warehouse over the weekend
+  (where we can't control the environmental conditions).  For a detailed explanation of our standard procedures, you can visit this Web page:
+  <a href="http://www.klwines.com/transittime.asp" class="text-brand">http://www.klwines.com/transittime.asp</a>
+</p>
+
+<table class="bordered-container" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      <p>Additionally, you can check the status of your order at:</p>
+      <a target="_blank" class="text-brand" href="https://klwines.com/Receipt?OrderIds=36704118|36704119&ShopperId=15668760">
+        https://klwines.com/Receipt?OrderIds=36704118|36704119&ShopperId=15668760
+      </a>
+    </td>
+  </tr>
+</table>
+
+<p>
+  To print your gift card please visit
+  <a target="_blank" href="https://klwines.com/shopping/receipt.asp?oid=132">
+    https://klwines.com/shopping/receipt.asp?oid=234
+  </a>
+  and press the Print Gift Card button.
+</p>
+
+<p>
+  You can also modify your account settings in the My Account section of our website:
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>
+</p>
+
+<%- include('./src/shared/horizontalLine') %>
+
+<p>
+  <h1>Your order reads as follows:</h1>
+</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      Ship to: <br>
+
+      <b>
+        Bharath Nalli <br>
+        K&L Wine Merchants - Redwood City <br>
+        3005 EL Camino Real <br>
+        Redwood City, CA 94061 <br>
+        USA
+      </b>
+    </td>
+
+    <td>
+      <p>
+        E-mail address: <a href="mailto:bharath@techfabric.co">bharath@techfabric.co</a>
+      </p>
+      <p>
+        Phone: <b>650-364-8544</b>
+      </p>
+      <p>
+        Grand Total: <b>$934.12</b>
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+<h1>
+  <p>Order # 36704118 on 1/18/2019</p>
+</h1>
+
+<p>
+  Shipping Method: <b>Will Call - Redwood City</b>
+</p>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  price: '$224.00'
+}, {
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  price: '$10.99'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$234.99',
+  salesTax: '$5.00',
+  total: '$239.99'
+}) %>
+
+<%- include('./src/shared/thanksForShopping' %>
+
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>

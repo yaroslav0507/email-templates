@@ -44,12 +44,8 @@
   </tr>
 </table>
 
-<p>To view a full transaction history of your auction sales and withdrawals,
-  request a check or track your consignments,
-  please visit the <a href="http://www.klwines.com/Account" class="text-brand">Auctions-Selling</a>  page. </p>
+<%- include('./src/shared/transactionHistoryMessage' %>
 
-<p class="centered-banner-text">
-  Thank you for shopping at <a href="https://www.klwines.com" class="link-default">klwines.com</a>!
-</p>
+<%- include('./src/shared/thanksForShopping' %>
 
 <%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
