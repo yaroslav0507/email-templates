@@ -4,6 +4,11 @@
     <th class="order-table__cell">&nbsp;</th>
     <th class="order-table__cell">Item</th>
     <th class="order-table__cell">Quantity</th>
+
+    <%if (!!items.find(i => i.bottleSize)) { %>
+      <th class="order-table__cell">Bottle Size</th>
+    <% } %>
+
     <th class="order-table__cell">Unit Price</th>
   </tr>
   </thead>
@@ -27,6 +32,11 @@
         </a>
       </td>
       <td class="order-table__cell"><%= item.qty %></td>
+
+      <%if (item.bottleSize) { %>
+        <td class="order-table__cell"><%= item.bottleSize %></td>
+      <% } %>
+
       <td class="order-table__cell"><%= item.price %></td>
     </tr>
   <% }); %>

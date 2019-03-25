@@ -1,0 +1,149 @@
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  A lot has been created on your behalf by the auction administrator.
+</p>
+
+<p>
+  The details of your lot appear below.  If you need to get in
+  touch with us about your lot, send an e-mail message to
+  <a href="mailto:auctionreview@klwines.com">auctionreview@klwines.com</a>
+  or call <a href="tel:6505911705" class="link-default">650-591-1705</a>.
+</p>
+
+<p>
+  You can always view your lot details by going to the "Auctions - Selling" link in the My account section of our website:<br/>
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>
+</p>
+
+<p>
+  Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<p>
+  Description: <b>Lot description goes here</b>
+</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      <p>
+        Minimum Bid Price:
+      </p>
+    </td>
+    <td>
+      <p>
+        $150.00
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        Lot Items PickUp Address:
+      </p>
+    </td>
+
+    <td>
+      <p>
+        PickUpAddressName,
+        PickUpCompanyName,
+        PickUpAddress1,
+        PickUpAddress2,
+        PickUpCity,
+        PickUpStateCD,
+        PickUpStateCD,
+        PickUpPostalCode,
+        PickUpPostalCode,
+        PickUpCountry
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        Auction Sale Payment Address:
+      </p>
+    </td>
+
+    <td>
+      <p>
+        PaymentAddressName,
+        PaymentCompanyName,
+        PaymentAddress1,
+        PaymentAddress2,
+        PaymentCity,
+        PaymentStateCD,
+        PaymentStateCD,
+        PaymentPostalCode,
+        PaymentPostalCode,
+        PaymentCountry
+      </p>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Listing Fee:</p>
+    </td>
+    <td>
+      <p>$15.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Featured Lot Fee:</p>
+    </td>
+    <td>
+      <p>$10.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Shipping Material Delivery Cost:</p>
+    </td>
+    <td>
+      <p>$5.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Inbound Shipping Cost:
+    </td>
+    <td>
+      $48.00
+    </td>
+  </tr>
+</table>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$224.00'
+}, {
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$10.99'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$234.99',
+  salesTax: '$5.00',
+  total: '$239.99'
+}) %>
+
+
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>

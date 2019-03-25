@@ -6,13 +6,13 @@
 				Congratulations! We are happy to inform you that your auction lot listed below has been sold for a price of  <xsl:value-of select="format-number(Lot/SalesPrice, '$#,##0.00')"/>
 
 				<br/><br/>
-        You will hear from K&amp;L’s Auction department regarding payment in the next few days if you haven’t already set up a payment plan/schedule for your consignment.
+        You will hear from K&amp;Lï¿½s Auction department regarding payment in the next few days if you havenï¿½t already set up a payment plan/schedule for your consignment.
 
         <br/><br/>
 				If you need to get in
 				touch with us about your lot, send an e-mail message to
 				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
-				or call 650-591-1705.
+				or call <a href="tel:6505911705" class="link-default">650-591-1705</a>.
 
 				<br/><br/>
 
@@ -26,8 +26,8 @@
 				<br/><br/>
 
 
-				Lot Name: <xsl:value-of select="Lot/LotVintagePrefix"/><xsl:text> </xsl:text><xsl:value-of select="Lot/LotName"/><br/>
-				Description: <xsl:value-of select="Lot/LotDescription"/><br/><br/>
+				Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+				Description: <b>Lot description goes here</b><br/><br/>
 				Auction Start Date/Time: <xsl:value-of select="myutils:ConvertDate(Lot/AuctionStartDate)"/> PT<br/>
 				Auction End Date/Time: <xsl:value-of select="myutils:ConvertDate(Lot/AuctionEndDate)"/> PT
 				<br/>
