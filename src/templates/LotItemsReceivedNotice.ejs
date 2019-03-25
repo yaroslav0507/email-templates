@@ -1,0 +1,56 @@
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  This is a confirmation that we have received the items for the lot listed below.
+  We will be inspecting the items to ensure that the quality and description match our
+  initial auction agreement.
+</p>
+
+<p>
+  An auction director will be in touch with you shortly to discuss the date your lot
+  will go live to bidders and confirm the terms of your auction agreement.
+</p>
+
+<p>
+  If you need to get in touch with us about your lot, send an e-mail message to
+  <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+  or call <a href="tel:6505911705" class="link-default">650-591-1705</a>.
+</p>
+
+<p>
+  You can always view your lot status by going to the My Account section of our website, and selecting "Auctions - Selling":
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>
+</p>
+
+<p>
+  Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<p>
+  Description: <b>Lot description goes here</b>
+</p>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$224.00'
+}, {
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$10.99'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$234.99',
+  salesTax: '$5.00',
+  total: '$239.99'
+}) %>
+
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
