@@ -1,4 +1,4 @@
-<h1 class="page-title">Dear Jonh,</h1>
+<h1 class="page-title">Dear John,</h1>
 
 <p>
   Due to your non acceptance of the winning bid or your credit cards failure to authorize
@@ -36,9 +36,6 @@
   </tr>
 </table>
 
-<p>
-  If you have any questions, you can contact the auction department toll free at <a href="tel:8775594637" class="link-default">877-559-4637</a> (ext 4060)
-  for customers in the United States, or <a href="tel:6505911705" class="link-default">(650) 591-1705</a> for international customers.
-</p>
+<%- include('./src/shared/ifYouHaveAnyQuestions') %>
 
 <%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>

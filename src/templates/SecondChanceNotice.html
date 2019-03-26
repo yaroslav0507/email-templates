@@ -1,7 +1,8 @@
 <html>
 			<body style="width:400px">
 				<br/>
-				Dear <xsl:value-of select="Bid/ShopperName"/>,
+				<h1 class="page-title">Dear John,</h1>
+
 				<br/><br/>
 				Congratulations! You have a second chance to buy the following lot:<br/>
 				<b>
@@ -53,8 +54,8 @@
         are interested in securing a locker to store your auction items, please contact
         <a href="mailto:onsite-lockers@klwines.com">onsite-lockers@klwines.com</a>.<br/><br/>
 
-				If you have any questions, you can contact the auction department toll free at <a href="tel:8775594637" class="link-default">877-559-4637</a> (ext 4060) for customers in the United States, or (650) 591-1705 for international customers.
-				<br/><br/>
+        <%- include('./src/shared/ifYouHaveAnyQuestions') %>
+        <br/><br/>
 				Thank you for shopping at K&amp;L Wine Merchants -- we appreciate your business.
 				<br/><br/>
 

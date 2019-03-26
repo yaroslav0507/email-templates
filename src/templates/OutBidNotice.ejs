@@ -1,0 +1,87 @@
+<h1 class="page-title">Dear John,</h1>
+
+
+<p>
+  You have been outbid on the following lot:
+</p>
+
+<p>
+  <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      <p>Your Maximum Bid:</p>
+    </td>
+
+    <td>
+      <p>
+        <b>$10.99</b>
+        ($12.09 including 10% buyer's premium)
+        (reserve not met)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Your Bid Time:</p>
+    </td>
+    <td>
+      <p><a href="#" class="link-default">04/17/2018 03:32pm PT</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Auction End Time:
+    </td>
+    <td>
+      <a href="#" class="link-default">05/17/2018 00:00pm PT</a>
+    </td>
+  </tr>
+</table>
+
+<h1>This lot contains the following items:</h1>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/auctions/0131962177755079046.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  qty: 6,
+  price: '$5,634.00'
+}, {
+  img: 'https://www.klwines.com//images/auctions/0131962177880610459.jpg',
+  name: '2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)',
+  qty: 3,
+  price: '$6,300.00'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$11,934.00',
+  salesTax: '$2,386.60',
+  total: '$14,320.00'
+}) %>
+
+<p>
+  <a
+    target="_blank"
+    href="https://klwines.com/Auction/Bidding/AuctionBidDetail.aspx?sku=1403810"
+    class="text-brand"
+  >
+    Click Here
+  </a>to increase your bid.
+</p>
+
+<p>
+  To view your bidding history, track new auctions or pay for lots, visit the My Account page and select <a
+    href="http://www.klwines.com/Account">
+    <b>Auctions-Buying</b>
+  </a>
+</p>
+
+<%- include('./src/shared/ifYouHaveAnyQuestions') %>
+
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
