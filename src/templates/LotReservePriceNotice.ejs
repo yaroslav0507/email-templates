@@ -1,0 +1,88 @@
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  This is your initial auction agreement for the lot listed below:
+</p>
+
+<p>
+  Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<p>
+  Description: <b>Lot description goes here</b>
+</p>
+
+<table
+  class="bordered-container bordered-container_filled"
+  width="100%"
+  style="table-layout: fixed"
+>
+  <tr>
+    <td>
+      <p>Starting Bid Price:</p>
+    </td>
+
+    <td>
+      <p>
+        <b>$249.00</b>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Lot Reserve Price:</p>
+    </td>
+
+    <td>
+      <p>
+        <b>$200.00</b>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <span>Listing Fee:</span>
+    </td>
+
+    <td>
+      <span>
+        <b>$30.00</b>
+      </span>
+    </td>
+  </tr>
+</table>
+
+<p>
+  <span class="text-brand inline-block">**</span>IMPORTANT: Please see K&amp;L Wine Auctions Terms &amp; Conditions below.
+  You must reply to this email accepting these Terms &amp; Conditions in order to proceed with this auction lot.
+</p>
+
+<p>
+  You can always view your lot status by going to the My account section of our website, and selecting "Auctions - Selling":
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>
+</p>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$224.00'
+}, {
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$10.99'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$234.99',
+  salesTax: '$5.00',
+  total: '$239.99'
+}) %>
+
+<%- include('./src/shared/termsAndConditions') %>
