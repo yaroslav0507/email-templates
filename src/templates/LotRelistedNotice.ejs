@@ -1,72 +1,85 @@
-<html>
-			<body style="width:400px">
-				<br/>
-				<h1 class="page-title">Dear Jonh,</h1>
-				<br/><br/>
+<h1 class="page-title">Dear Jonh,</h1>
 
-				Your auction lot has been relisted:<br/>
-				<a target="_blank">
-					<xsl:attribute name="href">
-						<xsl:value-of select="$BaseLinkUrlKey"/>/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Lot/SKU"/>
-					</xsl:attribute>
-					http://www.klwines.com/Auction/Bidding/AuctionBidDetail.aspx?sku=<xsl:value-of select="Lot/SKU"/>
-				</a>
+<p>
+  Your auction lot has been relisted:
+  <a target="_blank" class="text-brand" href="https://klwines.com/Auction/Bidding/AuctionBidDetail.aspx?sku=123">
+    http://www.klwines.com/Auction/Bidding/AuctionBidDetail.aspx?sku=123
+  </a>
+</p>
 
-				<br/><br/>
-				The details of your lot appear below. If you need to get in
-				touch with us about your lot, send an e-mail message to
-				<a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
-				or call <a href="tel:6505911705" class="link-default">650-591-1705</a>.
+<p>
+  The details of your lot appear below. If you need to get in
+  touch with us about your lot, send an e-mail message to
+  <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+  or call <a href="tel:6505911705" class="link-default">650-591-1705</a>.
+</p>
 
-				You can always view your lot status by going to the My Account section of our website, and selecting "Auctions - Selling":<br/>
-				<a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>
+<p>
+  You can always view your lot status by going to the My Account section of our website, and selecting "Auctions - Selling":
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>
+</p>
 
-			<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+<p>
+  Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
 
-			Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
-			Description: <b>Lot description goes here</b><br/><br/>
-				Auction Start Time/Date: <xsl:value-of select="myutils:ConvertDate(Lot/AuctionStartDate)"/><br/>
-				Auction End Time/Date: <xsl:value-of select="myutils:ConvertDate(Lot/AuctionEndDate)"/>
-				<br/><br/>
+<p>
+  Description: <b>Lot description goes here</b>
+</p>
 
-				<xsl:if test="string-length(Lot/MinimumBidPrice) &gt; 0">
-				Starting Bid:
-				<xsl:value-of select="format-number(Lot/MinimumBidPrice, '$#,##0.00')"/><br/><br/>
-				</xsl:if>
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td>
+      <p>Auction Start Time/Date:</p>
+    </td>
+    <td>
+      <p><a href="#" class="link-default">04/17/2018 03:32pm PT</a></p>
+    </td>
+  </tr>
 
-				<br/><br/>-------------------------------------------------------------------------------<br/><br/>
+  <tr>
+    <td>
+      <p>Auction End Time/Date:</p>
+    </td>
+    <td>
+      <p><a href="#" class="link-default">04/18/2018 03:32pm PT</a></p>
+    </td>
+  </tr>
 
-				<table border="1" cellpadding="5">
-					<th>Item Name</th>
-					<th>Quantity</th>
-					<th>Bottle Size</th>
-					<th>Vintage</th>
+  <tr>
+    <td>
+      Starting Bid:
+    </td>
+    <td>
+      <b>$300.00</b>
+    </td>
+  </tr>
+</table>
 
-					<xsl:for-each select="LotItem">
 
-						<tr>
-							<td>
-								<xsl:value-of select="ItemName"/>
-							</td>
-							<td align="right">
-								<xsl:value-of select="Quantity"/>
-							</td>
-							<td align="right">
-								<xsl:value-of select="BottleSize"/>
-							</td>
-							<td align="right">
-								<xsl:value-of select="Vintage"/>
-							</td>
-						</tr>
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$224.00'
+}, {
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$10.99'
+}]}) %>
 
-					</xsl:for-each>
+<%- include('./src/shared/total', {
+  subtotal: '$234.99',
+  salesTax: '$5.00',
+  total: '$239.99'
+}) %>
 
-				</table>
+<p class="centered-banner-text">
+  Thank you for working with K&amp;L Wine Merchants!
+</p>
 
-				<br/><br/>
-
-				Thank you for working with K&amp;L Wine Merchants!
-
-<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %><br/>
-			</body>
-		</html>
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
