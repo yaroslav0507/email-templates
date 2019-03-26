@@ -1,0 +1,146 @@
+<html>
+<body style="width:400px">
+
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  Congratulations! We are happy to inform you that your auction lot listed below has been sold for a price of
+  <xsl:value-of select="format-number(Lot/SalesPrice, '$#,##0.00')"/>
+</p>
+
+<p>
+  You will hear from K&amp;L's Auction department regarding payment in the next few days if you haven't already set up a
+  payment plan/schedule for your consignment.
+</p>
+
+<p>
+  If you need to get in
+  touch with us about your lot, send an e-mail message to
+  <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>
+  or call <a href="tel:6505911705" class="link-default">650-591-1705</a>.
+</p>
+
+<p>
+  <a target="_blank" class="text-brand" href="https://www.klwines.com/p/i?i=1403310">Click here</a>&nbsp;to view the
+  auction screen for your lot.
+</p>
+
+
+<p>
+  Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<p>
+  Description: <b>Lot description goes here</b>
+</p>
+
+<table
+  class="bordered-container bordered-container_filled"
+  width="100%"
+  style="table-layout: fixed"
+>
+  <tr>
+    <td>
+      <p>Auction Start Date/Time:</p>
+    </td>
+
+    <td>
+      <p>05/08/2019 00:00 PT</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Auction End Date/Time:</p>
+    </td>
+
+    <td>
+      <p>05/09/2019 00:00 PT</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Winning Bid:</p>
+    </td>
+
+    <td>
+      <p>$1,000.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Listing Fee:</p>
+    </td>
+    <td>
+      <p>$15.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>ReListing Fee:</p>
+    </td>
+    <td>
+      <p>$15.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Shipping Material Delivery Cost:</p>
+    </td>
+    <td>
+      <p>$5.00</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        Inbound Shipping Cost:
+      </p>
+    </td>
+    <td>
+      <p>
+        $38.00
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        K&amp;L Wine Merchants Auction Commission:
+      </p>
+    </td>
+    <td>
+      <p>
+        $8.00
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Seller's Net Proceeds:
+    </td>
+    <td>
+      $80.00
+    </td>
+  </tr>
+</table>
+
+
+<p>
+  You will receive payment in the mail within 30 days of the auction end date.
+</p>
+
+<p class="centered-banner-text">
+  Thank you for working with K&amp;L Wine Merchants!
+</p>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
+</body>
+</html>
