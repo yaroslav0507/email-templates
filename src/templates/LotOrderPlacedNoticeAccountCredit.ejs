@@ -1,0 +1,99 @@
+<h1 class="page-title">Dear Jonh,</h1>
+
+<p>
+  Congratulations! Your auction lot listed below has sold:
+</p>
+
+<p>
+  Lot Name: <b>2008 Louis Roederer "Cristal" Brut Champagne</b>
+</p>
+
+<table
+  class="bordered-container bordered-container_filled"
+  width="100%"
+  style="table-layout: fixed"
+>
+  <tr>
+    <td><p>Winning Bid:</p></td>
+
+    <td><p>$1,000.00</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Listing Fee:</p></td>
+    <td><p>$15.00</p></td>
+  </tr>
+
+  <tr>
+    <td><p>ReListing Fee:</p></td>
+    <td><p>$15.00</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Shipping Material Delivery Cost:</p></td>
+    <td><p>$5.00</p></td>
+  </tr>
+
+  <tr>
+    <td>Inbound Shipping Cost:</td>
+    <td>$38.00</td>
+  </tr>
+</table>
+
+<h1>This lot contains the following items:</h1>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/skus/1403310x.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  link: 'https://www.klwines.com/p/i?i=1403310',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$224.00'
+}, {
+  img: 'https://www.klwines.com//images/skus/1178723l.jpg',
+  name: '2010 Bois-Malot, Bordeaux Supérieur',
+  qty: 1,
+  bottleSize: 0.75,
+  price: '$10.99'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$234.99',
+  salesTax: '$5.00',
+  total: '$239.99'
+}) %>
+
+<p>
+  <a target="_blank" class="text-brand" href="https://www.klwines.com/p/i?i=1403310">Click here</a>&nbsp;to view the
+  auction screen for your lot.
+</p>
+
+<p>
+  Proceeds from this lot will become available in your K&amp;L Credit Account once the buyer of your wine completes
+  payment.
+  This usually takes 2 to 5 days and will not exceed a period of 30 days from the sale of your wine.
+  Apply your K&amp;L store credit to any future online retail or in-store purchases and pay no seller commission.
+</p>
+
+<p>
+  To view a full transaction history of your auction sales and withdrawals, request a check or track your consignments,
+  please visit the
+  <a target="_blank" class="text-brand" href="https://klwines.com/Auction/AuctionLot/AuctionLanding.aspx">
+    Auctions-Selling
+  </a> page.
+</p>
+
+
+<p>
+  If you have any questions, please email <a href="mailto:auctions@klwines.com">auctions@klwines.com</a>.
+  You can contact the auction department toll free at <a href="tel:8775594637" class="link-default">877-559-4637</a>
+  (ext 4060) for customers in the United States,
+  or (650) 591-1705 for international customers.
+</p>
+
+
+<p class="centered-banner-text">
+  Thank you for working with K&amp;L Wine Merchants!
+</p>
+
+<%- include('./src/shared/signature', { email: "auctions@klwines.com"}) %>
