@@ -1,4 +1,4 @@
-From:  customerservice@klwines.com
+From:  <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a>
 To:    ddewilde@pacbell.net
 Subject:  Your K&L order #30554441 status
 
@@ -55,9 +55,9 @@ The following items were included in this shipment:
 </p>
 
 If you need to get in touch with us about your orders, send an
-e-mail message to customerservice@klwines.com, or contact us via
-FAX (1-650-364-4687) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
-the United States or 1-650-364-8544 for international customers).
+e-mail message to <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a>, or contact us via
+FAX (1-<a href="tel:6503644687" class="link-default">650-364-4687</a>) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
+the United States or 1-<a href="tel:6503648544" class="link-default">650-364-8544</a> for international customers).
 
 Thank you for shopping at klwines.com
 

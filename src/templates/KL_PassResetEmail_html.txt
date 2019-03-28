@@ -18,6 +18,6 @@
 		K&L Wine Merchants<br />
 		http://www.klwines.com<br />
 		Phone: <a href="tel:8002475987" class="link-default">800-247-5987</a><br />
-		Email:  customerservice@klwines.com<br />
+		Email:  <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a><br />
 	<body>
 </html>
