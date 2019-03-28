@@ -11,9 +11,25 @@ The shipway for this order is: <shipway>
 
 The status of this order is: <status>
 
-The following items were included in this shipment:
+<h1>The following items were included in this shipment:</h1>
 
-<order>
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/auctions/0131962177755079046.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  qty: 6,
+  price: '$5,634.00'
+}, {
+  img: 'https://www.klwines.com//images/auctions/0131962177880610459.jpg',
+  name: '2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)',
+  qty: 3,
+  price: '$6,300.00'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$11,934.00',
+  salesTax: '$2,386.60',
+  total: '$14,320.00'
+}) %>
 
 <p>
   To see the latest information about your order, visit "My Account" at
