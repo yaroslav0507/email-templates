@@ -1,0 +1,28 @@
+From: KLMaint@klwines.com
+To: brian@klwines.com
+Subject: KLMaint Alert: Event ShipRateZero at 2005-07-14 11:23:06 AM
+
+Event:            ShipRateZero
+TSLogged:         2005-07-14 11:23:06 AM
+StaffIDLogged:    104
+LocationIDLogged: 2
+StationCDLogged:  ADMIN51
+DBIDLogged:       MASTER
+
+EventData:
+Order: 30558408
+
+EventXMLData:
+<EventHeader>
+   <EventType>ShipRateZero</EventType>
+   <TSLogged>2005-07-14 11:23:06 AM</TSLogged>
+   <StaffIDLogged>104</StaffIDLogged>
+   <LocationIDLogged>2</LocationIDLogged>
+   <StationCDLogged>ADMIN51</StationCDLogged>
+   <DBIDLogged>MASTER</DBIDLogged>
+</EventHeader>
+
+<EventBody>
+<Order>30558408</Order>
+
+</EventBody>

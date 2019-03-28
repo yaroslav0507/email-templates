@@ -1,0 +1,7 @@
+<br>
+The tracking number for this shipment is <tracker>.<br>
+Please visit the freight carrier's site for exact<br>
+shipping pickup and dropoff dates, by clicking on<br>
+the link below.  You may have to copy the link and<br>
+paste it into your browser.<br>
+<carrierlink><br>

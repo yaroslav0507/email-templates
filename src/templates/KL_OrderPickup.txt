@@ -1,0 +1,45 @@
+Hello from klwines.com.
+
+Just wanted to let you know the status of your order #<orderID>.
+
+Your order is ready for pickup.
+<lblcomments>
+These are the comments: <comments>
+</lblcomments>
+Thanks for shopping with klwines.com - we appreciate the business.
+
+The shipway for this order is: <shipway>
+
+The status of this order is: <status>
+
+The following items were included in this shipment:
+
+<order>
+
+<lblSpaceLimitations>
+Due to space limitations, we need you to take possession of all will calls and holds within 90 days of the order date. Thank you for your cooperation.
+</lblSpaceLimitations>
+
+To see the latest information about your order, visit "My Account" at
+http://www.klwines.com/account.asp. "My Account" lets you manage
+your orders online by giving you the ability to do the following:  
+
+* See your order status
+* Change your e-mail address or password
+* Update your billing and shipping information for future orders
+
+You can also reach "My Account" by clicking on the link on the
+top of any page on our Web site.
+
+If you need to get in touch with us about your orders, send an
+e-mail message to customerservice@klwines.com, or contact us via
+FAX (1-650-364-4687) or phone (1-800-247-5987 for customers in
+the United States or 1-650-364-8544 for international customers).
+
+Thank you for shopping at klwines.com
+
+---------------------------------------------------------------------
+K&L Wine Merchants
+"Internet's Best Wine Site"  -- Money Magazine
+questions@klwines.com             http://www.klwines.com/
+---------------------------------------------------------------------

@@ -1,0 +1,26 @@
+
+Thank you very much for your order #<orderID>
+
+Due to the extreme weather conditions along the route between the San Francisco Bay Area and your shipping address, we highly suggest that you upgrade your shipping selection to a faster level of service.
+
+FedEx 2nd Day Air:  __
+FedEx Priority Overnight:  __
+
+
+You are not required to make a change, but we are unable to take responsibility for wines that are damaged in transit by weather.
+
+In addition, we would be happy to hold your order in our warehouse for 90 days or less while we wait for shipping conditions to improve.  If we still have your order after 90 days we will ask you to move it into paid storage.
+
+Your current shipping method is <shipway>.
+
+Please contact us as soon as possible to let us know how you would like to proceed.  You can reply to this email or contact us at 877-KLWines (toll free).
+
+We appreciate your business and simply want to ensure that your wines are delivered to you safely.
+
+The following items are included in this order:
+
+<order>
+
+K&L Wine Merchants
+customerservice@klwines.com
+877-KLWines (877-559-4637)

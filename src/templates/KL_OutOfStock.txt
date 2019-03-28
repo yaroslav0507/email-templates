@@ -1,0 +1,17 @@
+
+Thank you very much for your order #<orderID>
+
+We are very sorry to inform you of an availability problem on at least one item within the order.  At the time the order was placed we were not aware of the problem, but as we were pulling the order together we discovered this issue.
+
+The following items are included in this order:
+
+<order>
+
+
+If you have requested that we hold the order and wait for your instructions, you can reach us by replying to this email or contacting us at 877-KLWines (toll free).  Alternatively, if you've requested that we ship the order as-is or authorized us to make a substitution on your behalf, we will follow those instructions.
+
+
+K&L Wine Merchants
+customerservice@klwines.com
+877-KLWines (877-559-4637)
+www.KLWines.com

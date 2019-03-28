@@ -1,0 +1,25 @@
+
+Event:            <EventType>
+TSLogged:         <TSLogged>
+StaffIDLogged:    <StaffIDLogged>
+LocationIDLogged: <LocationIDLogged>
+StationCDLogged:  <StationCDLogged>
+DBIDLogged:       <DBIDLogged>
+
+EventData:
+<EventData>
+
+EventXMLData:
+<EventHeader>
+   {{EventType}}<EventType>{{/EventType}}
+   {{TSLogged}}<TSLogged>{{/TSLogged}}
+   {{StaffIDLogged}}<StaffIDLogged>{{/StaffIDLogged}}
+   {{LocationIDLogged}}<LocationIDLogged>{{/LocationIDLogged}}
+   {{StationCDLogged}}<StationCDLogged>{{/StationCDLogged}}
+   {{DBIDLogged}}<DBIDLogged>{{/DBIDLogged}}
+</EventHeader>
+
+<EventBody>
+<EventXMLData>
+
+</EventBody>

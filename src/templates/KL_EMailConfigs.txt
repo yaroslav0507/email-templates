@@ -1,0 +1,437 @@
+CCMatch.txt,From,customerservice@klwines.com
+CCMatch.txt,To,ccmatch@klwines.com
+CCMatch.txt,Subj,KLMaint Alert: Possible Credit Card Match Problem
+
+CustGreet.txt,From,support@klwines.com
+CustGreet.txt,Subj,K&L Wine Merchants: WELCOME!
+
+CustIDPwd.txt,From,support@klwines.com
+CustIDPwd.txt,Subj,K&L Wine Merchants: The information you requested
+
+PassResetEmail_html.txt,From,support@klwines.com
+PassResetEmail_html.txt,Subj,Password reminder
+
+RcvgMgrNotice.txt,From,customerservice@klwines.com
+RcvgMgrNotice.txt,Subj,<docdescription> <message>
+
+POCust.txt,From,support@klwines.com
+POCust.txt,Subj,K&L Wine Merchants: The information you requested
+
+POVend.txt,From,support@klwines.com
+POVend.txt,Subj,K&L Wine Merchants: PO #<poid>
+
+SYSEventReport.txt,From,KLMaint@klwines.com
+SYSEventReport.txt,Subj,KLMaint Alert: Event <EventType> at <TSLogged>
+
+3rdParty.txt,From,support@klwines.com
+3rdParty.txt,Subj,3rd-Party Help Needed for Order #<orderID>
+
+CCDecline.txt,From,customerservice@klwines.com
+CCDecline.txt,Subj,KLWines.com - Credit Card Problem #<orderID>
+
+LiquorProblem.txt,From,customerservice@klwines.com
+LiquorProblem.txt,Subj,(KLWines.com) Product Shipping Problem for Your Order - Please Respond
+
+OutOfStock.txt,From,customerservice@klwines.com
+OutOfStock.txt,Subj,(KLWines.com) Out-Of-Stock Notice for Your Order - Please Respond
+
+WeatherWarning.txt,From,customerservice@klwines.com
+WeatherWarning.txt,Subj,(KLWines.com) Weather Advisory for Your Order - Please Respond
+
+OrderPickup.txt,From,customerservice@klwines.com
+OrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierOrderPickup.txt,From,customerservice@klwines.com
+SommelierOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+OrderTemplateNoShip.txt,From,support@klwines.com
+OrderTemplateNoShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+OrderTemplateShip.txt,From,support@klwines.com
+OrderTemplateShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+ShipConf.txt,From,support@klwines.com
+ShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+SommelierShipConf.txt,From,support@klwines.com
+SommelierShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+OrdSplit.txt,From,support@klwines.com
+OrdSplit.txt,Subj,Your K&L order #<orderID> has been split
+
+OrdMaster.txt,From,support@klwines.com
+OrdMaster.txt,Subj,Your K&L orders are complete
+
+OrdDetail.txt,From,support@klwines.com
+OrdDetail.txt,Subj,Details for order #<orderID>
+
+OrderPickupMastAll.txt,From,customerservice@klwines.com
+OrderPickupMastAll.txt,Subj,Your K&L orders are complete
+
+OrderPickupMastPartial.txt,From,customerservice@klwines.com
+OrderPickupMastPartial.txt,Subj,Your K&L orders are complete
+
+GiftCard.txt,From,customerservice@klwines.com
+GiftCard.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderPickup.txt,From,customerservice@klwines.com
+GiftOrderPickup.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderShipConf.txt,From,customerservice@klwines.com
+GiftOrderShipConf.txt,Subject,Your Gift Order from K&L Wine Merchants has Shipped
+
+SommelierGiftOrderPickup.txt,From,customerservice@klwines.com
+SommelierGiftOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierGiftShipConf.txt,From,support@klwines.com
+SommelierGiftShipConf.txt,Subj,Your K&L order #<orderID> is complete
+CCMatch.txt,From,customerservice@klwines.com
+CCMatch.txt,To,ccmatch@klwines.com
+CCMatch.txt,Subj,KLMaint Alert: Possible Credit Card Match Problem
+
+CustGreet.txt,From,support@klwines.com
+CustGreet.txt,Subj,K&L Wine Merchants: WELCOME!
+
+CustIDPwd.txt,From,support@klwines.com
+CustIDPwd.txt,Subj,K&L Wine Merchants: The information you requested
+
+PassResetEmail_html.txt,From,support@klwines.com
+PassResetEmail_html.txt,Subj,Password reminder
+
+RcvgMgrNotice.txt,From,customerservice@klwines.com
+RcvgMgrNotice.txt,Subj,<docdescription> <message>
+
+POCust.txt,From,support@klwines.com
+POCust.txt,Subj,K&L Wine Merchants: The information you requested
+
+POVend.txt,From,support@klwines.com
+POVend.txt,Subj,K&L Wine Merchants: PO #<poid>
+
+SYSEventReport.txt,From,KLMaint@klwines.com
+SYSEventReport.txt,Subj,KLMaint Alert: Event <EventType> at <TSLogged>
+
+3rdParty.txt,From,support@klwines.com
+3rdParty.txt,Subj,3rd-Party Help Needed for Order #<orderID>
+
+CCDecline.txt,From,customerservice@klwines.com
+CCDecline.txt,Subj,KLWines.com - Credit Card Problem #<orderID>
+
+LiquorProblem.txt,From,customerservice@klwines.com
+LiquorProblem.txt,Subj,(KLWines.com) Product Shipping Problem for Your Order - Please Respond
+
+OutOfStock.txt,From,customerservice@klwines.com
+OutOfStock.txt,Subj,(KLWines.com) Out-Of-Stock Notice for Your Order - Please Respond
+
+WeatherWarning.txt,From,customerservice@klwines.com
+WeatherWarning.txt,Subj,(KLWines.com) Weather Advisory for Your Order - Please Respond
+
+OrderPickup.txt,From,customerservice@klwines.com
+OrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierOrderPickup.txt,From,customerservice@klwines.com
+SommelierOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+OrderTemplateNoShip.txt,From,support@klwines.com
+OrderTemplateNoShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+OrderTemplateShip.txt,From,support@klwines.com
+OrderTemplateShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+ShipConf.txt,From,support@klwines.com
+ShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+SommelierShipConf.txt,From,support@klwines.com
+SommelierShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+OrdSplit.txt,From,support@klwines.com
+OrdSplit.txt,Subj,Your K&L order #<orderID> has been split
+
+OrdMaster.txt,From,support@klwines.com
+OrdMaster.txt,Subj,Your K&L orders are complete
+
+OrdDetail.txt,From,support@klwines.com
+OrdDetail.txt,Subj,Details for order #<orderID>
+
+OrderPickupMastAll.txt,From,customerservice@klwines.com
+OrderPickupMastAll.txt,Subj,Your K&L orders are complete
+
+OrderPickupMastPartial.txt,From,customerservice@klwines.com
+OrderPickupMastPartial.txt,Subj,Your K&L orders are complete
+
+GiftCard.txt,From,customerservice@klwines.com
+GiftCard.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderPickup.txt,From,customerservice@klwines.com
+GiftOrderPickup.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderShipConf.txt,From,customerservice@klwines.com
+GiftOrderShipConf.txt,Subject,Your Gift Order from K&L Wine Merchants has Shipped
+
+SommelierGiftOrderPickup.txt,From,customerservice@klwines.com
+SommelierGiftOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierGiftShipConf.txt,From,support@klwines.com
+SommelierGiftShipConf.txt,Subj,Your K&L order #<orderID> is complete
+CCMatch.txt,From,customerservice@klwines.com
+CCMatch.txt,To,ccmatch@klwines.com
+CCMatch.txt,Subj,KLMaint Alert: Possible Credit Card Match Problem
+
+CustGreet.txt,From,support@klwines.com
+CustGreet.txt,Subj,K&L Wine Merchants: WELCOME!
+
+CustIDPwd.txt,From,support@klwines.com
+CustIDPwd.txt,Subj,K&L Wine Merchants: The information you requested
+
+PassResetEmail_html.txt,From,support@klwines.com
+PassResetEmail_html.txt,Subj,Password reminder
+
+RcvgMgrNotice.txt,From,customerservice@klwines.com
+RcvgMgrNotice.txt,Subj,<docdescription> <message>
+
+POCust.txt,From,support@klwines.com
+POCust.txt,Subj,K&L Wine Merchants: The information you requested
+
+POVend.txt,From,support@klwines.com
+POVend.txt,Subj,K&L Wine Merchants: PO #<poid>
+
+SYSEventReport.txt,From,KLMaint@klwines.com
+SYSEventReport.txt,Subj,KLMaint Alert: Event <EventType> at <TSLogged>
+
+3rdParty.txt,From,support@klwines.com
+3rdParty.txt,Subj,3rd-Party Help Needed for Order #<orderID>
+
+CCDecline.txt,From,customerservice@klwines.com
+CCDecline.txt,Subj,KLWines.com - Credit Card Problem #<orderID>
+
+LiquorProblem.txt,From,customerservice@klwines.com
+LiquorProblem.txt,Subj,(KLWines.com) Product Shipping Problem for Your Order - Please Respond
+
+OutOfStock.txt,From,customerservice@klwines.com
+OutOfStock.txt,Subj,(KLWines.com) Out-Of-Stock Notice for Your Order - Please Respond
+
+WeatherWarning.txt,From,customerservice@klwines.com
+WeatherWarning.txt,Subj,(KLWines.com) Weather Advisory for Your Order - Please Respond
+
+OrderPickup.txt,From,customerservice@klwines.com
+OrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierOrderPickup.txt,From,customerservice@klwines.com
+SommelierOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+OrderTemplateNoShip.txt,From,support@klwines.com
+OrderTemplateNoShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+OrderTemplateShip.txt,From,support@klwines.com
+OrderTemplateShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+ShipConf.txt,From,support@klwines.com
+ShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+SommelierShipConf.txt,From,support@klwines.com
+SommelierShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+OrdSplit.txt,From,support@klwines.com
+OrdSplit.txt,Subj,Your K&L order #<orderID> has been split
+
+OrdMaster.txt,From,support@klwines.com
+OrdMaster.txt,Subj,Your K&L orders are complete
+
+OrdDetail.txt,From,support@klwines.com
+OrdDetail.txt,Subj,Details for order #<orderID>
+
+OrderPickupMastAll.txt,From,customerservice@klwines.com
+OrderPickupMastAll.txt,Subj,Your K&L orders are complete
+
+OrderPickupMastPartial.txt,From,customerservice@klwines.com
+OrderPickupMastPartial.txt,Subj,Your K&L orders are complete
+
+GiftCard.txt,From,customerservice@klwines.com
+GiftCard.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderPickup.txt,From,customerservice@klwines.com
+GiftOrderPickup.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderShipConf.txt,From,customerservice@klwines.com
+GiftOrderShipConf.txt,Subject,Your Gift Order from K&L Wine Merchants has Shipped
+
+SommelierGiftOrderPickup.txt,From,customerservice@klwines.com
+SommelierGiftOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierGiftShipConf.txt,From,support@klwines.com
+SommelierGiftShipConf.txt,Subj,Your K&L order #<orderID> is complete
+CCMatch.txt,From,customerservice@klwines.com
+CCMatch.txt,To,ccmatch@klwines.com
+CCMatch.txt,Subj,KLMaint Alert: Possible Credit Card Match Problem
+
+CustGreet.txt,From,support@klwines.com
+CustGreet.txt,Subj,K&L Wine Merchants: WELCOME!
+
+CustIDPwd.txt,From,support@klwines.com
+CustIDPwd.txt,Subj,K&L Wine Merchants: The information you requested
+
+PassResetEmail_html.txt,From,support@klwines.com
+PassResetEmail_html.txt,Subj,Password reminder
+
+RcvgMgrNotice.txt,From,customerservice@klwines.com
+RcvgMgrNotice.txt,Subj,<docdescription> <message>
+
+POCust.txt,From,support@klwines.com
+POCust.txt,Subj,K&L Wine Merchants: The information you requested
+
+POVend.txt,From,support@klwines.com
+POVend.txt,Subj,K&L Wine Merchants: PO #<poid>
+
+SYSEventReport.txt,From,KLMaint@klwines.com
+SYSEventReport.txt,Subj,KLMaint Alert: Event <EventType> at <TSLogged>
+
+3rdParty.txt,From,support@klwines.com
+3rdParty.txt,Subj,3rd-Party Help Needed for Order #<orderID>
+
+CCDecline.txt,From,customerservice@klwines.com
+CCDecline.txt,Subj,KLWines.com - Credit Card Problem #<orderID>
+
+LiquorProblem.txt,From,customerservice@klwines.com
+LiquorProblem.txt,Subj,(KLWines.com) Product Shipping Problem for Your Order - Please Respond
+
+OutOfStock.txt,From,customerservice@klwines.com
+OutOfStock.txt,Subj,(KLWines.com) Out-Of-Stock Notice for Your Order - Please Respond
+
+WeatherWarning.txt,From,customerservice@klwines.com
+WeatherWarning.txt,Subj,(KLWines.com) Weather Advisory for Your Order - Please Respond
+
+OrderPickup.txt,From,customerservice@klwines.com
+OrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierOrderPickup.txt,From,customerservice@klwines.com
+SommelierOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+OrderTemplateNoShip.txt,From,support@klwines.com
+OrderTemplateNoShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+OrderTemplateShip.txt,From,support@klwines.com
+OrderTemplateShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+ShipConf.txt,From,support@klwines.com
+ShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+SommelierShipConf.txt,From,support@klwines.com
+SommelierShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+OrdSplit.txt,From,support@klwines.com
+OrdSplit.txt,Subj,Your K&L order #<orderID> has been split
+
+OrdMaster.txt,From,support@klwines.com
+OrdMaster.txt,Subj,Your K&L orders are complete
+
+OrdDetail.txt,From,support@klwines.com
+OrdDetail.txt,Subj,Details for order #<orderID>
+
+OrderPickupMastAll.txt,From,customerservice@klwines.com
+OrderPickupMastAll.txt,Subj,Your K&L orders are complete
+
+OrderPickupMastPartial.txt,From,customerservice@klwines.com
+OrderPickupMastPartial.txt,Subj,Your K&L orders are complete
+
+GiftCard.txt,From,customerservice@klwines.com
+GiftCard.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderPickup.txt,From,customerservice@klwines.com
+GiftOrderPickup.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderShipConf.txt,From,customerservice@klwines.com
+GiftOrderShipConf.txt,Subject,Your Gift Order from K&L Wine Merchants has Shipped
+
+SommelierGiftOrderPickup.txt,From,customerservice@klwines.com
+SommelierGiftOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierGiftShipConf.txt,From,support@klwines.com
+SommelierGiftShipConf.txt,Subj,Your K&L order #<orderID> is complete
+CCMatch.txt,From,customerservice@klwines.com
+CCMatch.txt,To,ccmatch@klwines.com
+CCMatch.txt,Subj,KLMaint Alert: Possible Credit Card Match Problem
+
+CustGreet.txt,From,support@klwines.com
+CustGreet.txt,Subj,K&L Wine Merchants: WELCOME!
+
+CustIDPwd.txt,From,support@klwines.com
+CustIDPwd.txt,Subj,K&L Wine Merchants: The information you requested
+
+PassResetEmail_html.txt,From,support@klwines.com
+PassResetEmail_html.txt,Subj,Password reminder
+
+RcvgMgrNotice.txt,From,customerservice@klwines.com
+RcvgMgrNotice.txt,Subj,<docdescription> <message>
+
+POCust.txt,From,support@klwines.com
+POCust.txt,Subj,K&L Wine Merchants: The information you requested
+
+POVend.txt,From,support@klwines.com
+POVend.txt,Subj,K&L Wine Merchants: PO #<poid>
+
+SYSEventReport.txt,From,KLMaint@klwines.com
+SYSEventReport.txt,Subj,KLMaint Alert: Event <EventType> at <TSLogged>
+
+3rdParty.txt,From,support@klwines.com
+3rdParty.txt,Subj,3rd-Party Help Needed for Order #<orderID>
+
+CCDecline.txt,From,customerservice@klwines.com
+CCDecline.txt,Subj,KLWines.com - Credit Card Problem #<orderID>
+
+LiquorProblem.txt,From,customerservice@klwines.com
+LiquorProblem.txt,Subj,(KLWines.com) Product Shipping Problem for Your Order - Please Respond
+
+OutOfStock.txt,From,customerservice@klwines.com
+OutOfStock.txt,Subj,(KLWines.com) Out-Of-Stock Notice for Your Order - Please Respond
+
+WeatherWarning.txt,From,customerservice@klwines.com
+WeatherWarning.txt,Subj,(KLWines.com) Weather Advisory for Your Order - Please Respond
+
+OrderPickup.txt,From,customerservice@klwines.com
+OrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierOrderPickup.txt,From,customerservice@klwines.com
+SommelierOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+OrderTemplateNoShip.txt,From,support@klwines.com
+OrderTemplateNoShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+OrderTemplateShip.txt,From,support@klwines.com
+OrderTemplateShip.txt,Subj,STATUS UPDATE on your K&L order #<orderID>
+
+ShipConf.txt,From,support@klwines.com
+ShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+SommelierShipConf.txt,From,support@klwines.com
+SommelierShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+OrdSplit.txt,From,support@klwines.com
+OrdSplit.txt,Subj,Your K&L order #<orderID> has been split
+
+OrdMaster.txt,From,support@klwines.com
+OrdMaster.txt,Subj,Your K&L orders are complete
+
+OrdDetail.txt,From,support@klwines.com
+OrdDetail.txt,Subj,Details for order #<orderID>
+
+OrderPickupMastAll.txt,From,customerservice@klwines.com
+OrderPickupMastAll.txt,Subj,Your K&L orders are complete
+
+OrderPickupMastPartial.txt,From,customerservice@klwines.com
+OrderPickupMastPartial.txt,Subj,Your K&L orders are complete
+
+GiftCard.txt,From,customerservice@klwines.com
+GiftCard.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderPickup.txt,From,customerservice@klwines.com
+GiftOrderPickup.txt,Subject,Your Gift from K&L Wine Merchants
+
+GiftOrderShipConf.txt,From,customerservice@klwines.com
+GiftOrderShipConf.txt,Subject,Your Gift Order from K&L Wine Merchants has Shipped
+
+SommelierGiftOrderPickup.txt,From,customerservice@klwines.com
+SommelierGiftOrderPickup.txt,Subj,Your K&L order #<orderID> status
+
+SommelierGiftShipConf.txt,From,support@klwines.com
+SommelierGiftShipConf.txt,Subj,Your K&L order #<orderID> is complete
+
+extra line at end - do not remove

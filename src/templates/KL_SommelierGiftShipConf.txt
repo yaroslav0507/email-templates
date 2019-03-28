@@ -1,0 +1,28 @@
+
+Hello from K&L Wine Merchants -- www.KLWines.com
+
+Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#<orderID>) is complete.
+
+The following items are included in this order:
+
+<order>
+
+The shipping method for this order is <shipway>, being sent to:
+
+<shipto>
+
+<tracking>
+
+
+If you need to get in touch with us about your orders, send an
+e-mail message to customerservice@klwines.com, or contact us via
+FAX (1-650-364-4687) or phone (1-800-247-5987 for customers in
+the United States or 1-650-364-8544 for international customers).
+
+Thank you for shopping at klwines.com -- we appreciate your business.
+
+---------------------------------------------------------------------
+K&L Wine Merchants
+"Internet's Best Wine Site"  -- Money Magazine
+questions@klwines.com             http://www.klwines.com/
+---------------------------------------------------------------------

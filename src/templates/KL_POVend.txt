@@ -1,0 +1,17 @@
+Please CONFIRM PRICING prior to submitting our purchase order below.  If there are discrepancies from what is listed below, we need you to contact our buyers to have our internal purchase order modified.
+
+PO:    <poid>
+Date:  <podate>
+Sent:  <tssent>
+Buyer: <buyer>
+
+Deliver to:
+<deliverto>
+
+<details>
+
+---------------------------------------------------------------------
+K&L Wine Merchants
+"Internet's Best Wine Site"  -- Money Magazine
+questions@klwines.com             http://www.klwines.com/
+---------------------------------------------------------------------

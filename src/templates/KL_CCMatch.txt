@@ -1,0 +1,12 @@
+
+OrderID:   <OrderID>
+ShopperID: (<OrgShopperNumID>) <OrgShopperName>
+
+Card:      <CardType> <CardNum>
+CCID:      <CCID>
+ShopperID: (<ShopperNumID>) <ShopperName>
+
+TimeStamp: <TimeStamp>
+User:      (<UserID>) <UserName>
+Location:  (<LocationID>) <LocationName>
+Station:   <StationCD>

@@ -1,0 +1,35 @@
+
+Unfortunately, we've had a problem processing the credit card on
+Order #<orderID>
+<lblcomments>
+Additional comments for this order: <comments>
+</lblcomments>
+Can you please provide us with an alternate credit card or other
+instructions so that we can continue to process your order?
+Thank you for your help.
+
+Please contact us at 800-247-5987 or by email at
+customerservice@klwines.com and reference order #<orderID>
+
+The following items are included in this order:
+
+<order>
+
+To see the latest information about your order, visit "My Account" at
+http://www.klwines.com/account.asp. "My Account" lets you manage
+your orders online by giving you the ability to do the following:  
+
+* See your order status
+* Change your e-mail address or password
+* Update your billing and shipping information for future orders
+
+You can also reach "My Account" by clicking on the link on the
+top of any page on our Web site.
+
+Thank you for shopping at klwines.com -- we appreciate your business.
+
+---------------------------------------------------------------------
+K&L Wine Merchants
+"Internet's Best Wine Site"  -- Money Magazine
+questions@klwines.com             http://www.klwines.com/
+---------------------------------------------------------------------

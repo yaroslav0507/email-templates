@@ -1,0 +1,49 @@
+
+Hello from klwines.com.
+
+Just wanted to let you know the status of your order #<orderID>.
+
+Your order is ready for pickup.  This is the last order of the group.
+<lblOtherReady>
+The following orders are also ready to be picked up.
+<OtherOrdersReady>
+</lblOtherReady>
+
+<lblcomments>
+These are the comments associated with the order: <comments>
+</lblcomments>
+
+Thanks for shopping with klwines.com - we appreciate your business.
+
+The shipway for this order is: <shipway>
+
+The status of this order is: <status>
+
+The following items were included in this order:
+
+<order>
+
+
+Redwood City Store: Mon-Fri from 10-7pm, Sat 9-7pm, Sun 10-6pm
+3005 El Camino Real (one mile south of Woodside Road)
+
+San Francisco Store: Mon-Fri from 10-7pm, Sat 9-6pm, Sun 11-6pm
+855 Harrison St (between 4th and 5th)
+
+Hollywood Store:  Mon-Fri: 10-8pm, Sat: 10-8pm, Sun: 11-6pm
+1400 Vine St. (one block south of Sunset)
+
+Phone Orders: Mon-Fri from 9-7pm, Sat 9-6pm, Sun 11-6pm (Pacific)
+
+If you need to get in touch with us about your orders, send an
+e-mail message to customerservice@klwines.com, or contact us via
+FAX (1-650-364-4687) or phone (1-800-247-5987 for customers in
+the United States or 1-650-364-8544 for international customers).
+
+Thank you for shopping at klwines.com
+
+---------------------------------------------------------------------
+K&L Wine Merchants
+"Internet's Best Wine Site"  -- Money Magazine
+questions@klwines.com             http://www.klwines.com/
+---------------------------------------------------------------------
