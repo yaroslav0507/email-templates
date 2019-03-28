@@ -1,0 +1,56 @@
+<p>&nbsp;</p>
+
+<p>
+  You have received a gift card for K&L Wine Merchants.  It can be redeemed online, on the phone or in one of our stores.
+  Here are the details of your gift card:
+</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>To</p></td>
+    <td><p>{{to}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>From</p></td>
+    <td><p>{{from}}</p></td>
+  </tr>
+
+  <tr><td colspan="2">&nbsp;</td></tr>
+
+  <tr>
+    <td><p>Gift Card Number:</p></td>
+    <td><p>{{giftCardNumber}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Gift Card PIN:</p></td>
+    <td><p>{{giftCardPin}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Amount:</p></td>
+    <td><p>{{amount}}</p></td>
+  </tr>
+
+  <tr><td colspan="2">&nbsp;</td></tr>
+
+  <tr>
+    <td><p>Message:</p></td>
+    <td><p>{{amount}}</p></td>
+  </tr>
+
+  <tr>
+    <td>Date Sent</td>
+    <td>{{tssent}}</td>
+  </tr>
+</table>
+
+<p>
+  You can redeem this Gift Card either online at <a href="https://www.klwines.com" class="text-brand">https://www.klwines.com</a>,
+  <br>phone 877-559-4637(Toll Free) or in our retail stores. K&L Gift Cards never expire.
+</p>
+
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>

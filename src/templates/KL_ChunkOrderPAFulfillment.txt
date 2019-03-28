@@ -1,3 +1,0 @@
-** This is a Pre-Arrival Fulfillment order.  It contains<br>
-   pre-arrival wines that are now being shipped, but were<br>
-   previously purchased on an earlier order or orders.

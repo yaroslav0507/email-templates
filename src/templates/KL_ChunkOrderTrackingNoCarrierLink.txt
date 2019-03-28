@@ -1,4 +1,0 @@
-<br>
-The tracking number for this shipment is <tracker>.<br>
-Please visit the freight carrier's site for exact<br>
-shipping pickup and dropoff dates.<br>

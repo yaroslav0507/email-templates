@@ -7,8 +7,8 @@
 		If you did not request to have your password reset, please ignore this email. Rest assured your customer account is safe.<br />
 		<br />
 		Click the link below to go to reset your password using our secure server:<br />
-		<a href="http://www.klwines.com/secshopper/Passwordreset.asp?guid=%tGuid%">
-			http://www.klwines.com/secshopper/Passwordreset.asp?guid=%tGuid%
+		<a href="https://www.klwines.com/secshopper/Passwordreset.asp?guid=%tGuid%">
+			https://www.klwines.com/secshopper/Passwordreset.asp?guid=%tGuid%
 		</a><br />
 		<br />
 		If the link doesn�t work, you can copy and paste the link into your browser's address window, or retype it there. Once you have returned to klwines.com, we will give instructions for resetting your password.<br />
@@ -16,7 +16,7 @@
 		Thank you for using our site... we appreciate your business.<br />
 		<br />
 		K&L Wine Merchants<br />
-		http://www.klwines.com<br />
+		https://www.klwines.com<br />
 		Phone: <a href="tel:8002475987" class="link-default">800-247-5987</a><br />
 		Email:  <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a><br />
 	<body>

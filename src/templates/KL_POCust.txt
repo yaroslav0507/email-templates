@@ -5,8 +5,6 @@ Buyer:   <buyer>
 
 <details>
 
-<%- include('./src/shared/thanksForShopping') %>---------------------------------------------------------------------
-K&L Wine Merchants
-"Internet's Best Wine Site"  -- Money Magazine
-questions@klwines.com             http://www.klwines.com/
----------------------------------------------------------------------
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>

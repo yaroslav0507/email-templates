@@ -35,7 +35,7 @@ The shipping method for this order is <shipway>, being sent to:
 <tracking>
 <p>
   To see the latest information about your order, visit "My Account" at
-  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>. "My Account" lets you manage
+  <a href="https://www.klwines.com/account.asp" class="text-brand">https://www.klwines.com/account.asp</a>. "My Account" lets you manage
   your orders online by giving you the ability to do the following:
 </p>
 

@@ -22,7 +22,7 @@ Due to space limitations, we need you to take possession of all will calls and h
 
 <p>
   To see the latest information about your order, visit "My Account" at
-  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>. "My Account" lets you manage
+  <a href="https://www.klwines.com/account.asp" class="text-brand">https://www.klwines.com/account.asp</a>. "My Account" lets you manage
   your orders online by giving you the ability to do the following:
 </p>
 
@@ -50,8 +50,6 @@ e-mail message to <a href="mailto:customerservice@klwines.com">customerservice@k
 FAX (1-<a href="tel:6503644687" class="link-default">650-364-4687</a>) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
 the United States or 1-<a href="tel:6503648544" class="link-default">650-364-8544</a> for international customers).
 
-<%- include('./src/shared/thanksForShopping') %>---------------------------------------------------------------------
-K&L Wine Merchants
-"Internet's Best Wine Site"  -- Money Magazine
-questions@klwines.com             http://www.klwines.com/
----------------------------------------------------------------------
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>
