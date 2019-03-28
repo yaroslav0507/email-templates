@@ -15,20 +15,34 @@ The following items were included in this shipment:
 
 <order>
 
-To see the latest information about your order, visit "My Account" at
-http://www.klwines.com/account.asp. "My Account" lets you manage
-your orders online by giving you the ability to do the following:  
+<p>
+  To see the latest information about your order, visit "My Account" at
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>. "My Account" lets you manage
+  your orders online by giving you the ability to do the following:
+</p>
 
-* See your order status
-* Change your e-mail address or password
-* Update your billing and shipping information for future orders
+<ul>
+  <li>
+    See your order status
+  </li>
 
-You can also reach "My Account" by clicking on the link on the
-top of any page on our Web site.
+  <li>
+    Change your e-mail address or password
+  </li>
+
+  <li>
+    Update your billing and shipping information for future orders
+  </li>
+</ul>
+
+<p>
+  You can also reach "My Account" by clicking on the link on the
+  top of any page on our Web site.
+</p>
 
 If you need to get in touch with us about your orders, send an
 e-mail message to customerservice@klwines.com, or contact us via
-FAX (1-650-364-4687) or phone (1-800-247-5987 for customers in
+FAX (1-650-364-4687) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
 the United States or 1-650-364-8544 for international customers).
 
 Thank you for shopping at klwines.com

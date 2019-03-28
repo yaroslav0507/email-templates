@@ -4,14 +4,30 @@ Additional comments for this order: <comments>
 Hello from K&L Wine Merchants.
 This email is referencing order #<orderID>.
 
-Please contact us at 800-247-5987
+Please contact us at <a href="tel:8002475987" class="link-default">800-247-5987</a>
 (or reply to this email) if you have questions...
 
 The status of this order is: <status>
 
-The following items are included in this order:
+<h1>The following items are included in this order:</h1>
 
-<order>
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/auctions/0131962177755079046.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  qty: 6,
+  price: '$5,634.00'
+}, {
+  img: 'https://www.klwines.com//images/auctions/0131962177880610459.jpg',
+  name: '2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)',
+  qty: 3,
+  price: '$6,300.00'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$11,934.00',
+  salesTax: '$2,386.60',
+  total: '$14,320.00'
+}) %>
 
 The shipping information for this order is:
 
@@ -21,20 +37,34 @@ via <shipway>.
 <tracking>
 Thanks for shopping with klwines.com - we appreciate your business.
 
-To see the latest information about your order, visit "My Account" at
-http://www.klwines.com/account.asp. "My Account" lets you manage
-your orders online by giving you the ability to do the following:  
+<p>
+  To see the latest information about your order, visit "My Account" at
+  <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>. "My Account" lets you manage
+  your orders online by giving you the ability to do the following:
+</p>
 
-* See your order status
-* Change your e-mail address or password
-* Update your billing and shipping information for future orders
+<ul>
+  <li>
+    See your order status
+  </li>
 
-You can also reach "My Account" by clicking on the link on the
-top of any page on our Web site.
+  <li>
+    Change your e-mail address or password
+  </li>
+
+  <li>
+    Update your billing and shipping information for future orders
+  </li>
+</ul>
+
+<p>
+  You can also reach "My Account" by clicking on the link on the
+  top of any page on our Web site.
+</p>
 
 If you need to get in touch with us about your orders, send an
 e-mail message to customerservice@klwines.com, or contact us via
-FAX (1-650-364-4687) or phone (1-800-247-5987 for customers in
+FAX (1-650-364-4687) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
 the United States or 1-650-364-8544 for international customers).
 
 Thank you for shopping at klwines.com

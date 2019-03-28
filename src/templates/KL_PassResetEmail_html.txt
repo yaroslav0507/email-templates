@@ -11,13 +11,13 @@
 			http://www.klwines.com/secshopper/Passwordreset.asp?guid=%tGuid%
 		</a><br />
 		<br />
-		If the link doesn’t work, you can copy and paste the link into your browser's address window, or retype it there. Once you have returned to klwines.com, we will give instructions for resetting your password.<br />
+		If the link doesnï¿½t work, you can copy and paste the link into your browser's address window, or retype it there. Once you have returned to klwines.com, we will give instructions for resetting your password.<br />
 		<br />
 		Thank you for using our site... we appreciate your business.<br />
 		<br />
 		K&L Wine Merchants<br />
 		http://www.klwines.com<br />
-		Phone: 800-247-5987<br />
+		Phone: <a href="tel:8002475987" class="link-default">800-247-5987</a><br />
 		Email:  customerservice@klwines.com<br />
 	<body>
 </html>

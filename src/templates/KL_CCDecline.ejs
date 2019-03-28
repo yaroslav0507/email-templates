@@ -1,10 +1,31 @@
+<p>&nbsp;</p>
+<h1>
+  <p>
+    Unfortunately, we've had a problem processing the credit card on
+  </p>
+</h1>
 
-Hello from K&L Wine Merchants -- www.KLWines.com
+<h1>
+  <p>
+    Order #123156-588
+  </p>
+</h1>
 
-Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#<orderID>) is complete.
-<lblcomments>
-Additional comments for this order: <comments>
-</lblcomments>
+<p>
+  Additional comments for this order: placeholder
+</p>
+
+<p>
+  Can you please provide us with an alternate credit card or other
+  instructions so that we can continue to process your order?
+  Thank you for your help.
+</p>
+
+<p>
+  Please contact us at <a href="tel:8002475987" class="link-default">800-247-5987</a> or by email at
+  <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a> and reference order #123156-588
+</p>
+
 <h1>The following items are included in this order:</h1>
 
 <%- include('./src/shared/order', { items: [{
@@ -25,11 +46,6 @@ Additional comments for this order: <comments>
   total: '$14,320.00'
 }) %>
 
-The shipping method for this order is <shipway>, being sent to:
-
-<shipto>
-
-<tracking>
 <p>
   To see the latest information about your order, visit "My Account" at
   <a href="http://www.klwines.com/account.asp" class="text-brand">http://www.klwines.com/account.asp</a>. "My Account" lets you manage
@@ -55,15 +71,6 @@ The shipping method for this order is <shipway>, being sent to:
   top of any page on our Web site.
 </p>
 
-If you need to get in touch with us about your orders, send an
-e-mail message to customerservice@klwines.com, or contact us via
-FAX (1-650-364-4687) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
-the United States or 1-650-364-8544 for international customers).
+<%- include('./src/shared/thanksForShopping') %>
 
-Thank you for shopping at klwines.com -- we appreciate your business.
-
----------------------------------------------------------------------
-K&L Wine Merchants
-"Internet's Best Wine Site"  -- Money Magazine
-questions@klwines.com             http://www.klwines.com/
----------------------------------------------------------------------
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>

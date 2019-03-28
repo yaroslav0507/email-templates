@@ -15,7 +15,7 @@ The following items were included in this shipment:
 
 If you need to get in touch with us about your orders, send an
 e-mail message to customerservice@klwines.com, or contact us via
-FAX (1-650-364-4687) or phone (1-800-247-5987 for customers in
+FAX (1-650-364-4687) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
 the United States or 1-650-364-8544 for international customers).
 
 Thank you for shopping at klwines.com

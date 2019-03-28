@@ -27,12 +27,14 @@ To see the latest information about your orders, visit "My Account" at
 http://www.klwines.com/account.asp. "My Account" lets you manage
 your orders online, and edit your customer information.
 
-You can also reach "My Account" by clicking on the link on the
-top of any page on our Web site.
+<p>
+  You can also reach "My Account" by clicking on the link on the
+  top of any page on our Web site.
+</p>
 
 If you need to get in touch with us about your account, send an
 e-mail message to customerservice@klwines.com, contact us via
-phone (800-247-5987 or 650-364-8544), or by FAX (650-364-4687).
+phone (<a href="tel:8002475987" class="link-default">800-247-5987</a> or 650-364-8544), or by FAX (650-364-4687).
 
 Thank you for shopping at klwines.com
 

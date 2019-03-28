@@ -5,9 +5,25 @@ Due to state laws where the order is being shipped, we are unable to send any di
 
 If you have any questions you can reply to this email or contact us at 877-KLWines (toll free).
 
-The following items are included in this order:
+<h1>The following items are included in this order:</h1>
 
-<order>
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/auctions/0131962177755079046.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  qty: 6,
+  price: '$5,634.00'
+}, {
+  img: 'https://www.klwines.com//images/auctions/0131962177880610459.jpg',
+  name: '2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)',
+  qty: 3,
+  price: '$6,300.00'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$11,934.00',
+  salesTax: '$2,386.60',
+  total: '$14,320.00'
+}) %>
 
 K&L Wine Merchants
 customerservice@klwines.com
