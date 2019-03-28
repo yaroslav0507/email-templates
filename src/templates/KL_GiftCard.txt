@@ -16,9 +16,7 @@ You can redeem this Gift Card either online at  http://www.klwines.com/, phone 8
 or in our retail stores. K&L Gift Cards never expire.
 
 
-Thank you for shopping at klwines.com
-
----------------------------------------------------------------------
+<%- include('./src/shared/thanksForShopping') %>---------------------------------------------------------------------
 K&L Wine Merchants
 "Internet's Best Wine Site"  -- Money Magazine
 questions@klwines.com             http://www.klwines.com/

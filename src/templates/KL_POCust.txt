@@ -5,9 +5,7 @@ Buyer:   <buyer>
 
 <details>
 
-Thank you for shopping at klwines.com
-
----------------------------------------------------------------------
+<%- include('./src/shared/thanksForShopping') %>---------------------------------------------------------------------
 K&L Wine Merchants
 "Internet's Best Wine Site"  -- Money Magazine
 questions@klwines.com             http://www.klwines.com/

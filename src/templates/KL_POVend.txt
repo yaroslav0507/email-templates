@@ -8,10 +8,4 @@ Buyer: <buyer>
 Deliver to:
 <deliverto>
 
-<details>
-
----------------------------------------------------------------------
-K&L Wine Merchants
-"Internet's Best Wine Site"  -- Money Magazine
-questions@klwines.com             http://www.klwines.com/
----------------------------------------------------------------------
+<details><%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>
