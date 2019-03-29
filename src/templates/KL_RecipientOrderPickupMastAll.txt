@@ -8,7 +8,10 @@
 
 Your order is ready for pickup.  This is the last order of the group.
 <lblOtherReady>
-The following orders are also ready to be picked up.
+<!--<p>-->
+  <!--The following orders are also ready to be picked up.-->
+  <!--{{OtherOrdersReady}}-->
+<!--</p>-->
 <OtherOrdersReady>
 </lblOtherReady>
 

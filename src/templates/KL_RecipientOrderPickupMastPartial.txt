@@ -10,7 +10,10 @@ A portion of your order is ready for pickup.
 <lblcomments>
 These are the comments: <comments>
 </lblcomments><lblOtherReady>
-The following orders are also ready to be picked up.
+<!--<p>-->
+  <!--The following orders are also ready to be picked up.-->
+  <!--{{OtherOrdersReady}}-->
+<!--</p>-->
 <OtherOrdersReady>
 </lblOtherReady>
 The following orders are still being processed.
