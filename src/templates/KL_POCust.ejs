@@ -1,0 +1,26 @@
+<p>&nbsp;</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>PO Date:</p></td>
+    <td><p>{{podate}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Sent:</p></td>
+    <td><p>{{tssent}}</p></td>
+  </tr>
+
+  <tr>
+    <td>Buyer:</td>
+    <td>{{buyer}}</td>
+  </tr>
+</table>
+
+<p>
+  {{details}}
+</p>
+
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>
