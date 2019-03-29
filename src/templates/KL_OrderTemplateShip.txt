@@ -1,6 +1,6 @@
-<lblcomments>
-Additional comments for this order: <comments>
-</lblcomments>
+<p>
+  Additional comments for this order: {{comments}}
+</p>
 Hello from K&L Wine Merchants.
 This email is referencing order #{{orderID}}.
 

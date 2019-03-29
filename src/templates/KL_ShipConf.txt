@@ -1,9 +1,9 @@
 Hello from K&L Wine Merchants -- www.KLWines.com
 
 Just wanted to let you know that your order (#{{orderID}}) is complete.
-<lblcomments>
-Additional comments for this order: <comments>
-</lblcomments>
+<p>
+  Additional comments for this order: {{comments}}
+</p>
 <h1>The following items are included in this order:</h1>
 
 <%- include('./src/shared/order', { items: [{
