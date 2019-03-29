@@ -1,7 +1,7 @@
 
 Hello from K&L Wine Merchants -- www.KLWines.com
 
-Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#<orderID>) is complete.
+Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#{{orderID}}) is complete.
 
 <h1>The following items are included in this order:</h1>
 

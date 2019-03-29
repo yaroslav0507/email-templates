@@ -1,9 +1,18 @@
+<p>&nbsp;</p>
 
-We are sorry to inform you that there is a problem with your order #<orderID>
+<p>
+  We are sorry to inform you that there is a problem with your order #{{orderID}}
+</p>
 
-Due to state laws where the order is being shipped, we are unable to send any distilled spirits (liquor) to the address.  We have removed that portion of the order.  If there are no other products on the other aside from the distilled spirits, we have cancelled the order.  Please accept our apology - we have no control over the laws within the state where the order was to be shipped.
+<p>
+  Due to state laws where the order is being shipped, we are unable to send any distilled spirits (liquor) to the address.
+  We have removed that portion of the order.  If there are no other products on the other aside from the distilled spirits, we have cancelled the order.
+  Please accept our apology - we have no control over the laws within the state where the order was to be shipped.
+</p>
 
-If you have any questions you can reply to this email or contact us at 877-KLWines (toll free).
+<p>
+  If you have any questions you can reply to this email or contact us at 877-KLWines (<a href="tel:8775594637" class="link-default">877-559-4637</a>) (toll free).
+</p>
 
 <h1>The following items are included in this order:</h1>
 
@@ -25,6 +34,6 @@ If you have any questions you can reply to this email or contact us at 877-KLWin
   total: '$14,320.00'
 }) %>
 
-K&L Wine Merchants
-customerservice@klwines.com
-877-KLWines (877-559-4637)
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "customerservice@klwines.com"}) %>

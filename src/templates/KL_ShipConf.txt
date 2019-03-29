@@ -1,6 +1,6 @@
 Hello from K&L Wine Merchants -- www.KLWines.com
 
-Just wanted to let you know that your order (#<orderID>) is complete.
+Just wanted to let you know that your order (#{{orderID}}) is complete.
 <lblcomments>
 Additional comments for this order: <comments>
 </lblcomments>

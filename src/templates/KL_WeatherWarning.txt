@@ -1,5 +1,5 @@
 
-Thank you very much for your order #<orderID>
+Thank you very much for your order #{{orderID}}
 
 Due to the extreme weather conditions along the route between the San Francisco Bay Area and your shipping address, we highly suggest that you upgrade your shipping selection to a faster level of service.
 
@@ -37,6 +37,4 @@ We appreciate your business and simply want to ensure that your wines are delive
   total: '$14,320.00'
 }) %>
 
-K&L Wine Merchants
-customerservice@klwines.com
-877-KLWines (877-559-4637)
+<%- include('./src/shared/signature', { email: "customerservice@klwines.com"}) %>

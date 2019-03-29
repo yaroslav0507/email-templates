@@ -1,7 +1,7 @@
 
 Hello from klwines.com.
 
-Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#<orderID>) is ready for Pickup.
+Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#{{orderID}}) is ready for Pickup.
 <lblcomments>
 These are the comments: <comments>
 </lblcomments>

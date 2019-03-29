@@ -2,7 +2,7 @@
 Additional comments for this order: <comments>
 </lblcomments>
 Hello from K&L Wine Merchants.
-This email is referencing order #<orderID>.
+This email is referencing order #{{orderID}}.
 
 Please contact us at <a href="tel:8002475987" class="link-default">800-247-5987</a>
 (or reply to this email) if you have questions...
