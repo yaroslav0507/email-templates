@@ -1,13 +1,22 @@
 
-Hello from klwines.com.
-
+<h1 class="page-title">
+  Hello from klwines.com.
+</h1>
 Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#{{orderID}}) is ready for Pickup.
 
 Thanks for shopping with klwines.com - we appreciate the business.
 
-The shipway for this order is: <shipway>
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>The shipway for this order is:</p></td>
+    <td><p>{{shipway}}</p></td>
+  </tr>
 
-The status of this order is: <status>
+  <tr>
+    <td>The status of this order is:</td>
+    <td>{{status}}</td>
+  </tr>
+</table>
 
 <h1>The following items were included in this shipment:</h1>
 
@@ -29,10 +38,12 @@ The status of this order is: <status>
   total: '$14,320.00'
 }) %>
 
-If you need to get in touch with us about your orders, send an
-e-mail message to <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a>, or contact us via
-FAX (1-<a href="tel:6503644687" class="link-default">650-364-4687</a>) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
-the United States or 1-<a href="tel:6503648544" class="link-default">650-364-8544</a> for international customers).
+<p>
+  If you need to get in touch with us about your orders, send an
+  e-mail message to <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a>, or contact us via
+  FAX (1-<a href="tel:6503644687" class="link-default">650-364-4687</a>) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
+  the United States or 1-<a href="tel:6503648544" class="link-default">650-364-8544</a> for international customers).
+</p>
 
 <%- include('./src/shared/thanksForShopping') %>
 

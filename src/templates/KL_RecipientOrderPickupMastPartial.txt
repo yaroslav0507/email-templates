@@ -1,7 +1,10 @@
 
-Hello from klwines.com.
-
-Just wanted to let you know the status of your order #{{orderID}}.
+<h1 class="page-title">
+  Hello from klwines.com.
+</h1>
+<p>
+  Just wanted to let you know the status of your order #{{orderID}}.
+</p>
 
 A portion of your order is ready for pickup.
 <lblcomments>
@@ -15,9 +18,17 @@ The following orders are still being processed.
 
 Thanks for shopping with klwines.com - we appreciate the business.
 
-The shipway for this order is: <shipway>
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>The shipway for this order is:</p></td>
+    <td><p>{{shipway}}</p></td>
+  </tr>
 
-The status of this order is: <status>
+  <tr>
+    <td>The status of this order is:</td>
+    <td>{{status}}</td>
+  </tr>
+</table>
 
 The following items were included in this order:
 
@@ -35,10 +46,12 @@ Hollywood Store:  Mon-Fri: 10-8pm, Sat: 10-8pm, Sun: 11-6pm
 
 Phone Orders: Mon-Fri from 9-7pm, Sat 9-6pm, Sun 11-6pm (Pacific)
 
-If you need to get in touch with us about your orders, send an
-e-mail message to <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a>, or contact us via
-FAX (1-<a href="tel:6503644687" class="link-default">650-364-4687</a>) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
-the United States or 1-<a href="tel:6503648544" class="link-default">650-364-8544</a> for international customers).
+<p>
+  If you need to get in touch with us about your orders, send an
+  e-mail message to <a href="mailto:customerservice@klwines.com">customerservice@klwines.com</a>, or contact us via
+  FAX (1-<a href="tel:6503644687" class="link-default">650-364-4687</a>) or phone (1-<a href="tel:8002475987" class="link-default">800-247-5987</a> for customers in
+  the United States or 1-<a href="tel:6503648544" class="link-default">650-364-8544</a> for international customers).
+</p>
 
 <%- include('./src/shared/thanksForShopping') %>
 
