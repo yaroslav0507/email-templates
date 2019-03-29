@@ -1,0 +1,39 @@
+<p>&nbsp;</p>
+
+<p>
+  Please CONFIRM PRICING prior to submitting our purchase order below. <br>
+  If there are discrepancies from what is listed below, we need you to contact our buyers to have our internal purchase order modified.
+</p>
+
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>PO:</p></td>
+    <td><p>{{poid}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Date:</p></td>
+    <td><p>{{podate}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Sent:</p></td>
+    <td><p>{{tssent}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Buyer:</p></td>
+    <td><p>{{buyer}}</p></td>
+  </tr>
+
+  <tr>
+    <td>Deliver to:</td>
+    <td>{{deliverto}}</td>
+  </tr>
+</table>
+
+<p>
+  {{details}}
+</p>
+
+<%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>
