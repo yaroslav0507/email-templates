@@ -1,11 +1,15 @@
 <p>&nbsp;</p>
 
-<p>
-  {{docdescription}}
-</p>
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>Doc Description:</p></td>
+    <td><p>{{docdescription}}</p></td>
+  </tr>
 
-<p>
-  {{message}}
-</p>
+  <tr>
+    <td>Message:</td>
+    <td>{{message}}</td>
+  </tr>
+</table>
 
 <%- include('./src/shared/signature', { email: "questions@klwines.com"}) %>
