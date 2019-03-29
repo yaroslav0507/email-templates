@@ -1,0 +1,39 @@
+<p>&nbsp;</p>
+
+<h1 class="page-title">
+  Thank you very much for your order #{{orderID}}
+</h1>
+
+<p>
+  We are very sorry to inform you of an availability problem on at least one item within the order.
+  At the time the order was placed we were not aware of the problem, but as we were pulling the order together we discovered this issue.
+</p>
+
+<h1>The following items are included in this order:</h1>
+
+<%- include('./src/shared/order', { items: [{
+  img: 'https://www.klwines.com//images/auctions/0131962177755079046.jpg',
+  name: '2013 Harlan Estate Napa Valley Bordeaux Blend (OWC)',
+  qty: 6,
+  price: '$5,634.00'
+}, {
+  img: 'https://www.klwines.com//images/auctions/0131962177880610459.jpg',
+  name: '2013 Screaming Eagle Napa Valley Cabernet Sauvignon (OWC)',
+  qty: 3,
+  price: '$6,300.00'
+}]}) %>
+
+<%- include('./src/shared/total', {
+  subtotal: '$11,934.00',
+  salesTax: '$2,386.60',
+  total: '$14,320.00'
+}) %>
+
+<p>
+  If you have requested that we hold the order and wait for your instructions, you can reach us by replying to this email or contacting us at 877-KLWines (<a href="tel:8775594637" class="link-default">877-559-4637</a>) (toll free).
+  Alternatively, if you've requested that we ship the order as-is or authorized us to make a substitution on your behalf, we will follow those instructions.
+</p>
+
+<%- include('./src/shared/thanksForShopping') %>
+
+<%- include('./src/shared/signature', { email: "customerservice@klwines.com"}) %>
