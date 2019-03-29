@@ -1,13 +1,36 @@
+<h1 class="page-title">
+  Hello from K&L Wine Merchants.
+</h1>
+
+<p>
+  This email is referencing order #{{orderID}}.
+</p>
+
 <p>
   Additional comments for this order: {{comments}}
 </p>
-Hello from K&L Wine Merchants.
-This email is referencing order #{{orderID}}.
 
-Please contact us at <a href="tel:8002475987" class="link-default">800-247-5987</a>
-(or reply to this email) if you have questions...
+<p>
+  Please contact us at <a href="tel:8002475987" class="link-default">800-247-5987</a>
+  (or reply to this email) if you have questions.
+</p>
 
-The status of this order is: <status>
+<table class="bordered-container bordered-container_filled" width="100%" style="table-layout: fixed">
+  <tr>
+    <td><p>The shipway for this order is:</p></td>
+    <td><p>{{shipway}}</p></td>
+  </tr>
+
+  <tr>
+    <td><p>Ship To:</p></td>
+    <td><p>{{shipto}}</p></td>
+  </tr>
+
+  <tr>
+    <td>The status of this order is:</td>
+    <td>{{status}}</td>
+  </tr>
+</table>
 
 <h1>The following items are included in this order:</h1>
 
@@ -28,14 +51,6 @@ The status of this order is: <status>
   salesTax: '$2,386.60',
   total: '$14,320.00'
 }) %>
-
-The shipping information for this order is:
-
-<shipto>
-
-via <shipway>.
-<tracking>
-Thanks for shopping with klwines.com - we appreciate your business.
 
 <p>
   To see the latest information about your order, visit "My Account" at
