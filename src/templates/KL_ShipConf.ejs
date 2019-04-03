@@ -1,9 +1,15 @@
-Hello from K&L Wine Merchants -- www.KLWines.com
+<h1 class="page-title">
+  Hello from K&L Wine Merchants.
+</h1>
 
-Just wanted to let you know that your order (#{{orderID}}) is complete.
+<p>
+  Just wanted to let you know that your order (#{{orderID}}) is complete.
+</p>
+
 <p>
   Additional comments for this order: {{comments}}
 </p>
+
 <h1>The following items are included in this order:</h1>
 
 <%- include('./src/shared/order', { items: [{
@@ -25,14 +31,47 @@ Just wanted to let you know that your order (#{{orderID}}) is complete.
 }) %>
 
 <lblSpaceLimitations>
-Due to space limitations, we need you to take possession of all will calls and holds within 90 days of the order date. Thank you for your cooperation.
+  <p>
+    Due to space limitations, we need you to take possession of all will calls and holds within 90 days of the order date. Thank you for your cooperation.
+  </p>
 </lblSpaceLimitations>
 
-The shipping method for this order is <shipway>, being sent to:
+<p>
+  The shipping method for this order is {{shipway}}, being sent to:
+</p>
 
-<shipto>
+<table
+  class="bordered-container bordered-container_filled"
+  width="100%"
+  style="table-layout: fixed"
+>
+  <tr>
+    <td>
+      <p>Ship To:</p>
+    </td>
 
-<tracking>
+    <td>
+      <p>
+        CHARLES STREEGAN<br>
+        TABOK MANDAUE<br>
+        Ferreti Trading<br>
+        CEBU CITY, PHL<br>
+        415-333-7622 B (BIZ)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      Tracking Info:
+    </td>
+
+    <td>
+      {{tracking}}
+    </td>
+  </tr>
+</table>
+
 <p>
   To see the latest information about your order, visit "My Account" at
   <a href="https://www.klwines.com/account.asp" class="text-brand">https://www.klwines.com/account.asp</a>. "My Account" lets you manage
