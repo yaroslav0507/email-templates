@@ -1,7 +1,10 @@
+<h1 class="page-title">
+  Hello from K&L Wine Merchants.
+</h1>
 
-Hello from K&L Wine Merchants -- www.KLWines.com
-
-Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#{{orderID}}) is complete.
+<p>
+  Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#{{orderID}}) is ready for Pickup.
+</p>
 
 <h1>The following items are included in this order:</h1>
 
@@ -23,12 +26,41 @@ Just wanted to let you know that your PERSONAL SOMMELIER SERVICE Order (#{{order
   total: '$14,320.00'
 }) %>
 
-The shipping method for this order is <shipway>, being sent to:
+<p>
+  The shipping method for this order is {{shipway}}, being sent to:
+</p>
 
-<shipto>
+<table
+  class="bordered-container bordered-container_filled"
+  width="100%"
+  style="table-layout: fixed"
+>
+  <tr>
+    <td>
+      <p>Ship To:</p>
+    </td>
 
-<tracking>
+    <td>
+      <p>
+        CHARLES STREEGAN<br>
+        TABOK MANDAUE<br>
+        Ferreti Trading<br>
+        CEBU CITY, PHL<br>
+        415-333-7622 B (BIZ)
+      </p>
+    </td>
+  </tr>
 
+  <tr>
+    <td>
+      Tracking Info:
+    </td>
+
+    <td>
+      {{tracking}}
+    </td>
+  </tr>
+</table>
 
 <p>
   If you need to get in touch with us about your orders, send an
